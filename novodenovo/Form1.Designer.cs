@@ -41,7 +41,7 @@ namespace novodenovo
             // 
             // btn_entrar
             // 
-            this.btn_entrar.Location = new System.Drawing.Point(300, 364);
+            this.btn_entrar.Location = new System.Drawing.Point(300, 383);
             this.btn_entrar.Name = "btn_entrar";
             this.btn_entrar.Size = new System.Drawing.Size(144, 42);
             this.btn_entrar.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace novodenovo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(297, 244);
+            this.label1.Location = new System.Drawing.Point(297, 240);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
@@ -69,7 +69,7 @@ namespace novodenovo
             // 
             // tb_senha
             // 
-            this.tb_senha.Location = new System.Drawing.Point(300, 338);
+            this.tb_senha.Location = new System.Drawing.Point(300, 337);
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.Size = new System.Drawing.Size(144, 20);
             this.tb_senha.TabIndex = 3;
@@ -77,7 +77,7 @@ namespace novodenovo
             // 
             // tb_usuario
             // 
-            this.tb_usuario.Location = new System.Drawing.Point(300, 275);
+            this.tb_usuario.Location = new System.Drawing.Point(300, 266);
             this.tb_usuario.Name = "tb_usuario";
             this.tb_usuario.Size = new System.Drawing.Size(144, 20);
             this.tb_usuario.TabIndex = 4;
@@ -97,7 +97,7 @@ namespace novodenovo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 462);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tb_usuario);
             this.Controls.Add(this.tb_senha);
@@ -105,7 +105,7 @@ namespace novodenovo
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_entrar);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Tela Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
