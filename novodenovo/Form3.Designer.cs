@@ -53,12 +53,14 @@ namespace novodenovo
             this.button4 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 55);
+            this.label1.Location = new System.Drawing.Point(93, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -67,14 +69,14 @@ namespace novodenovo
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 48);
+            this.textBox1.Location = new System.Drawing.Point(151, 48);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 96);
+            this.textBox2.Location = new System.Drawing.Point(151, 96);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
@@ -82,7 +84,7 @@ namespace novodenovo
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(76, 96);
+            this.label2.Location = new System.Drawing.Point(92, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 2;
@@ -90,7 +92,7 @@ namespace novodenovo
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 227);
+            this.textBox3.Location = new System.Drawing.Point(151, 227);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
@@ -98,7 +100,7 @@ namespace novodenovo
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(79, 227);
+            this.label3.Location = new System.Drawing.Point(92, 234);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 4;
@@ -106,7 +108,7 @@ namespace novodenovo
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 269);
+            this.textBox4.Location = new System.Drawing.Point(151, 269);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 7;
@@ -114,7 +116,7 @@ namespace novodenovo
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(76, 269);
+            this.label4.Location = new System.Drawing.Point(82, 276);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 6;
@@ -159,7 +161,7 @@ namespace novodenovo
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(156, 187);
+            this.textBox6.Location = new System.Drawing.Point(151, 187);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 13;
@@ -167,7 +169,7 @@ namespace novodenovo
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(79, 187);
+            this.label7.Location = new System.Drawing.Point(66, 194);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 12;
@@ -193,7 +195,7 @@ namespace novodenovo
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(156, 312);
+            this.textBox7.Location = new System.Drawing.Point(151, 312);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 17;
@@ -201,7 +203,7 @@ namespace novodenovo
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(79, 312);
+            this.label8.Location = new System.Drawing.Point(93, 319);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 16;
@@ -262,11 +264,29 @@ namespace novodenovo
             this.label11.TabIndex = 23;
             this.label11.Text = "Serviço";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(39, 366);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(85, 13);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Data de Entrega";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(151, 359);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 25;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 474);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button3);
@@ -325,5 +345,7 @@ namespace novodenovo
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
