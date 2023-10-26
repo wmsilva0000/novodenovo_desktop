@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace novodenovo
 {
-    public partial class Form4 : Form
+    public partial class Tela_pedido : Form
     {
-        public Form4()
+        public Tela_pedido()
         {
             InitializeComponent();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void serviçosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

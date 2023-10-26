@@ -22,8 +22,8 @@ namespace novodenovo
             if(tb_usuario.Text == "admin" && tb_senha.Text =="123")
             {
                 MessageBox.Show("Seja Bem-Vindo(a)!");
-                Tela_inicial telaInicial = new Tela_inicial();
-                telaInicial.Show();
+                Tela_pedido telaPedido = new Tela_pedido();
+                telaPedido.Show();
                 this.Visible = false;
             }
             else
