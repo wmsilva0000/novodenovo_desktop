@@ -26,5 +26,24 @@ namespace novodenovo
         {
 
         }
+
+        private void btn_confirmar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Pedido registrado com sucesso!");
+        }
+
+        private void btn_servico_Click(object sender, EventArgs e)
+        {
+            Tela_servico telaServico = new Tela_servico();
+            telaServico.Show();
+            this.Visible = false;
+        }
+
+        private void btn_peca_Click(object sender, EventArgs e)
+        {
+            Tela_peca telaPeca = new Tela_peca();
+            telaPeca.Show();
+            this.Visible = false;
+        }
     }
 }
