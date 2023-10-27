@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace novodenovo
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -21,7 +21,6 @@ namespace novodenovo
         {
             if(tb_usuario.Text == "admin" && tb_senha.Text =="123")
             {
-                MessageBox.Show("Seja Bem-Vindo(a)!");
                 Tela_pedido telaPedido = new Tela_pedido();
                 telaPedido.Show();
                 this.Visible = false;

@@ -19,10 +19,26 @@ namespace novodenovo
 
         private void btn_cadPeca_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Peça registrada com sucesso!");
+            if (tb_cadPeca.Text == "")
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("Peça registrada com sucesso!");
+                Tela_pedido telaPedido = new Tela_pedido();
+                telaPedido.Show();
+                this.Visible = false;
+            }
+        }
+
+        private void btn_cancPeca_Click(object sender, EventArgs e)
+        {
             Tela_pedido telaPedido = new Tela_pedido();
             telaPedido.Show();
             this.Visible = false;
         }
+
+        
     }
 }

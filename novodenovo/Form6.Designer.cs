@@ -30,9 +30,10 @@ namespace novodenovo
         private void InitializeComponent()
         {
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_cadServ = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_cadServ = new System.Windows.Forms.Button();
+            this.btn_cancServ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label10
@@ -45,12 +46,12 @@ namespace novodenovo
             this.label10.TabIndex = 58;
             this.label10.Text = "Cadastro de Serviço";
             // 
-            // textBox1
+            // tb_cadServ
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 55;
+            this.tb_cadServ.Location = new System.Drawing.Point(162, 136);
+            this.tb_cadServ.Name = "tb_cadServ";
+            this.tb_cadServ.Size = new System.Drawing.Size(171, 20);
+            this.tb_cadServ.TabIndex = 55;
             // 
             // label1
             // 
@@ -63,7 +64,7 @@ namespace novodenovo
             // 
             // btn_cadServ
             // 
-            this.btn_cadServ.Location = new System.Drawing.Point(192, 214);
+            this.btn_cadServ.Location = new System.Drawing.Point(258, 214);
             this.btn_cadServ.Name = "btn_cadServ";
             this.btn_cadServ.Size = new System.Drawing.Size(75, 23);
             this.btn_cadServ.TabIndex = 59;
@@ -71,14 +72,25 @@ namespace novodenovo
             this.btn_cadServ.UseVisualStyleBackColor = true;
             this.btn_cadServ.Click += new System.EventHandler(this.btn_cadServ_Click);
             // 
+            // btn_cancServ
+            // 
+            this.btn_cancServ.Location = new System.Drawing.Point(111, 214);
+            this.btn_cancServ.Name = "btn_cancServ";
+            this.btn_cancServ.Size = new System.Drawing.Size(75, 23);
+            this.btn_cancServ.TabIndex = 65;
+            this.btn_cancServ.Text = "Cancelar";
+            this.btn_cancServ.UseVisualStyleBackColor = true;
+            this.btn_cancServ.Click += new System.EventHandler(this.btn_cancServ_Click);
+            // 
             // Tela_servico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 409);
+            this.Controls.Add(this.btn_cancServ);
             this.Controls.Add(this.btn_cadServ);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_cadServ);
             this.Controls.Add(this.label1);
             this.Name = "Tela_servico";
             this.Text = "Serviço";
@@ -90,8 +102,9 @@ namespace novodenovo
         #endregion
 
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_cadServ;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_cadServ;
+        private System.Windows.Forms.Button btn_cancServ;
     }
 }

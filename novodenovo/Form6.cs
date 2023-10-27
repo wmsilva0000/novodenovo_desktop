@@ -19,7 +19,21 @@ namespace novodenovo
 
         private void btn_cadServ_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Serviço registrado com sucesso!");
+            if (tb_cadServ.Text == "")
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Serviço registrado com sucesso!");
+                Tela_pedido telaPedido = new Tela_pedido();
+                telaPedido.Show();
+                this.Visible = false;
+            }
+        }
+
+        private void btn_cancServ_Click(object sender, EventArgs e)
+        {
             Tela_pedido telaPedido = new Tela_pedido();
             telaPedido.Show();
             this.Visible = false;
