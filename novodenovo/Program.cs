@@ -16,7 +16,7 @@ namespace novodenovo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MDIMenu());
+            Application.Run(new FormLogin());
         }
     }
 }

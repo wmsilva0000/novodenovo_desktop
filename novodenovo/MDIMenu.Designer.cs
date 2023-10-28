@@ -33,32 +33,24 @@ namespace novodenovo
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pendênciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.geralToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.diaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.semanaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.geralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.semanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_servico = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_peca = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faturamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pedidosToolStripMenuItem,
             this.pendênciasToolStripMenuItem,
             this.históricoToolStripMenuItem,
             this.serviçosToolStripMenuItem,
-            this.faturamentoToolStripMenuItem,
-            this.pedidosToolStripMenuItem});
+            this.faturamentoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(632, 24);
@@ -67,80 +59,22 @@ namespace novodenovo
             // 
             // pendênciasToolStripMenuItem
             // 
-            this.pendênciasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.geralToolStripMenuItem1,
-            this.diaToolStripMenuItem1,
-            this.semanaToolStripMenuItem1,
-            this.mêsToolStripMenuItem});
             this.pendênciasToolStripMenuItem.Name = "pendênciasToolStripMenuItem";
             this.pendênciasToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.pendênciasToolStripMenuItem.Text = "Pendências";
             // 
-            // geralToolStripMenuItem1
-            // 
-            this.geralToolStripMenuItem1.Name = "geralToolStripMenuItem1";
-            this.geralToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
-            this.geralToolStripMenuItem1.Text = "Geral";
-            // 
-            // diaToolStripMenuItem1
-            // 
-            this.diaToolStripMenuItem1.Name = "diaToolStripMenuItem1";
-            this.diaToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
-            this.diaToolStripMenuItem1.Text = "Dia";
-            // 
-            // semanaToolStripMenuItem1
-            // 
-            this.semanaToolStripMenuItem1.Name = "semanaToolStripMenuItem1";
-            this.semanaToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
-            this.semanaToolStripMenuItem1.Text = "Semana";
-            // 
-            // mêsToolStripMenuItem
-            // 
-            this.mêsToolStripMenuItem.Name = "mêsToolStripMenuItem";
-            this.mêsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.mêsToolStripMenuItem.Text = "Mês";
-            // 
             // históricoToolStripMenuItem
             // 
-            this.históricoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.geralToolStripMenuItem,
-            this.diaToolStripMenuItem,
-            this.semanaToolStripMenuItem,
-            this.mesToolStripMenuItem});
             this.históricoToolStripMenuItem.Name = "históricoToolStripMenuItem";
             this.históricoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.históricoToolStripMenuItem.Text = "Histórico";
             // 
-            // geralToolStripMenuItem
-            // 
-            this.geralToolStripMenuItem.Name = "geralToolStripMenuItem";
-            this.geralToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.geralToolStripMenuItem.Text = "Geral";
-            // 
-            // diaToolStripMenuItem
-            // 
-            this.diaToolStripMenuItem.Name = "diaToolStripMenuItem";
-            this.diaToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.diaToolStripMenuItem.Text = "Dia";
-            // 
-            // semanaToolStripMenuItem
-            // 
-            this.semanaToolStripMenuItem.Name = "semanaToolStripMenuItem";
-            this.semanaToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.semanaToolStripMenuItem.Text = "Semana";
-            // 
-            // mesToolStripMenuItem
-            // 
-            this.mesToolStripMenuItem.Name = "mesToolStripMenuItem";
-            this.mesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.mesToolStripMenuItem.Text = "Mês";
-            // 
             // serviçosToolStripMenuItem
             // 
             this.serviçosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
             this.btn_servico,
-            this.btn_peca,
-            this.clienteToolStripMenuItem});
+            this.btn_peca});
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
             this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.serviçosToolStripMenuItem.Text = "Cadastrar";
@@ -150,12 +84,21 @@ namespace novodenovo
             this.btn_servico.Name = "btn_servico";
             this.btn_servico.Size = new System.Drawing.Size(180, 22);
             this.btn_servico.Text = "Serviço";
+            this.btn_servico.Click += new System.EventHandler(this.btn_servico_Click);
             // 
             // btn_peca
             // 
             this.btn_peca.Name = "btn_peca";
             this.btn_peca.Size = new System.Drawing.Size(180, 22);
             this.btn_peca.Text = "Peça";
+            this.btn_peca.Click += new System.EventHandler(this.btn_peca_Click);
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // faturamentoToolStripMenuItem
             // 
@@ -169,13 +112,6 @@ namespace novodenovo
             this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
-            // 
-            // clienteToolStripMenuItem
-            // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // MDIMenu
             // 
@@ -197,15 +133,7 @@ namespace novodenovo
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem pendênciasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem geralToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem diaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem semanaToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem mêsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem históricoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem geralToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem diaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem semanaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem serviçosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btn_servico;
         private System.Windows.Forms.ToolStripMenuItem btn_peca;

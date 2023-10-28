@@ -21,14 +21,19 @@ namespace novodenovo
         {
             if(tb_usuario.Text == "admin" && tb_senha.Text =="123")
             {
-                Tela_pedido telaPedido = new Tela_pedido();
-                telaPedido.Show();
+                MDIMenu telaMenu = new MDIMenu();
+                telaMenu.Show();
                 this.Visible = false;
             }
             else
             {
                 MessageBox.Show("Usuário ou senha incorretos!");
             }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

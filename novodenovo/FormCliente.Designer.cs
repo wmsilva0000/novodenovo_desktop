@@ -34,14 +34,14 @@ namespace novodenovo
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelCadastro = new System.Windows.Forms.Panel();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonGravar = new System.Windows.Forms.Button();
+            this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonFiltrar = new System.Windows.Forms.Button();
             this.buttonNovo = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
-            this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonGravar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelCadastro.SuspendLayout();
             this.SuspendLayout();
@@ -94,10 +94,41 @@ namespace novodenovo
             this.panelCadastro.Controls.Add(this.label1);
             this.panelCadastro.Controls.Add(this.textBoxNome);
             this.panelCadastro.Controls.Add(this.label2);
-            this.panelCadastro.Location = new System.Drawing.Point(69, 84);
+            this.panelCadastro.Location = new System.Drawing.Point(90, 54);
             this.panelCadastro.Name = "panelCadastro";
             this.panelCadastro.Size = new System.Drawing.Size(306, 118);
             this.panelCadastro.TabIndex = 25;
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelar.Location = new System.Drawing.Point(198, 75);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(95, 29);
+            this.buttonCancelar.TabIndex = 30;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            // 
+            // buttonGravar
+            // 
+            this.buttonGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGravar.Location = new System.Drawing.Point(102, 75);
+            this.buttonGravar.Name = "buttonGravar";
+            this.buttonGravar.Size = new System.Drawing.Size(95, 29);
+            this.buttonGravar.TabIndex = 29;
+            this.buttonGravar.Text = "Gravar";
+            this.buttonGravar.UseVisualStyleBackColor = true;
+            this.buttonGravar.Click += new System.EventHandler(this.buttonGravar_Click);
+            // 
+            // maskedTextBoxTelefone
+            // 
+            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(190, 49);
+            this.maskedTextBoxTelefone.Mask = "(##) # ####-###";
+            this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
+            this.maskedTextBoxTelefone.PromptChar = ' ';
+            this.maskedTextBoxTelefone.Size = new System.Drawing.Size(103, 20);
+            this.maskedTextBoxTelefone.TabIndex = 3;
             // 
             // label3
             // 
@@ -154,37 +185,6 @@ namespace novodenovo
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
             this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
-            // 
-            // maskedTextBoxTelefone
-            // 
-            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(190, 49);
-            this.maskedTextBoxTelefone.Mask = "(##) # ####-###";
-            this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
-            this.maskedTextBoxTelefone.PromptChar = ' ';
-            this.maskedTextBoxTelefone.Size = new System.Drawing.Size(103, 20);
-            this.maskedTextBoxTelefone.TabIndex = 3;
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Location = new System.Drawing.Point(198, 75);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(95, 29);
-            this.buttonCancelar.TabIndex = 30;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
-            // 
-            // buttonGravar
-            // 
-            this.buttonGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGravar.Location = new System.Drawing.Point(102, 75);
-            this.buttonGravar.Name = "buttonGravar";
-            this.buttonGravar.Size = new System.Drawing.Size(95, 29);
-            this.buttonGravar.TabIndex = 29;
-            this.buttonGravar.Text = "Gravar";
-            this.buttonGravar.UseVisualStyleBackColor = true;
-            this.buttonGravar.Click += new System.EventHandler(this.buttonGravar_Click);
             // 
             // FormCliente
             // 

@@ -40,5 +40,19 @@ namespace novodenovo
             frm.Show();
             frm.BringToFront();
         }
+
+        private void btn_servico_Click(object sender, EventArgs e)
+        {
+            FormServico telaServico = new FormServico();
+            telaServico.Show();
+            this.Visible = false;
+        }
+
+        private void btn_peca_Click(object sender, EventArgs e)
+        {
+            FormPeca telaPeca = new FormPeca();
+            telaPeca.Show();
+            this.Visible = false;
+        }
     }
 }
