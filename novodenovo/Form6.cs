@@ -19,6 +19,9 @@ namespace novodenovo
 
         private void btn_cadServ_Click(object sender, EventArgs e)
         {
+            MySqlConnection meuSQL = new MySqlConnection("server=localhost;database=Aula1909;uid=root;pwd=");
+            meuSQL.Open();
+
             if (tb_cadServ.Text == "")
             {
 

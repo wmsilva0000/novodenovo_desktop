@@ -48,7 +48,7 @@ namespace novodenovo
             // 
             // tb_cadServ
             // 
-            this.tb_cadServ.Location = new System.Drawing.Point(162, 136);
+            this.tb_cadServ.Location = new System.Drawing.Point(148, 139);
             this.tb_cadServ.Name = "tb_cadServ";
             this.tb_cadServ.Size = new System.Drawing.Size(171, 20);
             this.tb_cadServ.TabIndex = 55;
@@ -56,7 +56,7 @@ namespace novodenovo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(116, 143);
+            this.label1.Location = new System.Drawing.Point(145, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 54;

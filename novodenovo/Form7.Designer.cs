@@ -31,14 +31,14 @@ namespace novodenovo
         {
             this.btn_cadPeca = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.tb_cadPeca = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_cancPeca = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_cadPeca = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_cadPeca
             // 
-            this.btn_cadPeca.Location = new System.Drawing.Point(254, 234);
+            this.btn_cadPeca.Location = new System.Drawing.Point(251, 281);
             this.btn_cadPeca.Name = "btn_cadPeca";
             this.btn_cadPeca.Size = new System.Drawing.Size(75, 23);
             this.btn_cadPeca.TabIndex = 63;
@@ -50,37 +50,37 @@ namespace novodenovo
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(139, 82);
+            this.label10.Location = new System.Drawing.Point(126, 50);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(169, 25);
             this.label10.TabIndex = 62;
             this.label10.Text = "Cadastro de Peça";
             // 
-            // tb_cadPeca
-            // 
-            this.tb_cadPeca.Location = new System.Drawing.Point(158, 156);
-            this.tb_cadPeca.Name = "tb_cadPeca";
-            this.tb_cadPeca.Size = new System.Drawing.Size(171, 20);
-            this.tb_cadPeca.TabIndex = 61;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 163);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "Nome";
-            // 
             // btn_cancPeca
             // 
-            this.btn_cancPeca.Location = new System.Drawing.Point(115, 234);
+            this.btn_cancPeca.Location = new System.Drawing.Point(112, 281);
             this.btn_cancPeca.Name = "btn_cancPeca";
             this.btn_cancPeca.Size = new System.Drawing.Size(75, 23);
             this.btn_cancPeca.TabIndex = 64;
             this.btn_cancPeca.Text = "Cancelar";
             this.btn_cancPeca.UseVisualStyleBackColor = true;
             this.btn_cancPeca.Click += new System.EventHandler(this.btn_cancPeca_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(121, 156);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "Nome";
+            // 
+            // tb_cadPeca
+            // 
+            this.tb_cadPeca.Location = new System.Drawing.Point(124, 172);
+            this.tb_cadPeca.Name = "tb_cadPeca";
+            this.tb_cadPeca.Size = new System.Drawing.Size(171, 20);
+            this.tb_cadPeca.TabIndex = 61;
             // 
             // Tela_peca
             // 
@@ -103,8 +103,8 @@ namespace novodenovo
 
         private System.Windows.Forms.Button btn_cadPeca;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox tb_cadPeca;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_cancPeca;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_cadPeca;
     }
 }
