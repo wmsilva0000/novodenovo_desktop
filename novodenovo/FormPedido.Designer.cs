@@ -299,6 +299,7 @@ namespace novodenovo
             this.maskedTextBox1.PromptChar = ' ';
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 21);
             this.maskedTextBox1.TabIndex = 62;
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // dataGridView2
             // 

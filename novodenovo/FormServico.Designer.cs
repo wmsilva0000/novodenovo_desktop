@@ -1,7 +1,7 @@
 ﻿
 namespace novodenovo
 {
-    partial class FormServiço
+    partial class FormServico
     {
         /// <summary>
         /// Required designer variable.
@@ -39,9 +39,11 @@ namespace novodenovo
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_nomeServ = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvServico = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_idServ = new System.Windows.Forms.TextBox();
             this.panel_cadServ.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServico)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_editServ
@@ -53,6 +55,7 @@ namespace novodenovo
             this.btn_editServ.TabIndex = 41;
             this.btn_editServ.Text = "Editar";
             this.btn_editServ.UseVisualStyleBackColor = true;
+            this.btn_editServ.Click += new System.EventHandler(this.btn_editServ_Click);
             // 
             // btn_sairServ
             // 
@@ -73,6 +76,7 @@ namespace novodenovo
             this.btn_novoServ.TabIndex = 39;
             this.btn_novoServ.Text = "Novo";
             this.btn_novoServ.UseVisualStyleBackColor = true;
+            this.btn_novoServ.Click += new System.EventHandler(this.btn_novoServ_Click);
             // 
             // btn_filtServ
             // 
@@ -86,35 +90,39 @@ namespace novodenovo
             // 
             // panel_cadServ
             // 
+            this.panel_cadServ.Controls.Add(this.label2);
+            this.panel_cadServ.Controls.Add(this.tb_idServ);
             this.panel_cadServ.Controls.Add(this.btn_cancServ);
             this.panel_cadServ.Controls.Add(this.btn_gravServ);
             this.panel_cadServ.Controls.Add(this.label3);
             this.panel_cadServ.Controls.Add(this.label1);
             this.panel_cadServ.Controls.Add(this.tb_nomeServ);
-            this.panel_cadServ.Location = new System.Drawing.Point(100, 56);
+            this.panel_cadServ.Location = new System.Drawing.Point(100, 12);
             this.panel_cadServ.Name = "panel_cadServ";
-            this.panel_cadServ.Size = new System.Drawing.Size(270, 118);
+            this.panel_cadServ.Size = new System.Drawing.Size(270, 162);
             this.panel_cadServ.TabIndex = 37;
             // 
             // btn_cancServ
             // 
             this.btn_cancServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancServ.Location = new System.Drawing.Point(168, 75);
+            this.btn_cancServ.Location = new System.Drawing.Point(168, 117);
             this.btn_cancServ.Name = "btn_cancServ";
             this.btn_cancServ.Size = new System.Drawing.Size(88, 29);
             this.btn_cancServ.TabIndex = 30;
             this.btn_cancServ.Text = "Cancelar";
             this.btn_cancServ.UseVisualStyleBackColor = true;
+            this.btn_cancServ.Click += new System.EventHandler(this.btn_cancServ_Click);
             // 
             // btn_gravServ
             // 
             this.btn_gravServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_gravServ.Location = new System.Drawing.Point(85, 75);
+            this.btn_gravServ.Location = new System.Drawing.Point(85, 117);
             this.btn_gravServ.Name = "btn_gravServ";
             this.btn_gravServ.Size = new System.Drawing.Size(77, 29);
             this.btn_gravServ.TabIndex = 29;
             this.btn_gravServ.Text = "Gravar";
             this.btn_gravServ.UseVisualStyleBackColor = true;
+            this.btn_gravServ.Click += new System.EventHandler(this.btn_gravServ_Click);
             // 
             // label3
             // 
@@ -145,17 +153,34 @@ namespace novodenovo
             this.tb_nomeServ.Size = new System.Drawing.Size(242, 20);
             this.tb_nomeServ.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvServico
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 11);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(470, 215);
-            this.dataGridView1.TabIndex = 36;
+            this.dgvServico.AllowUserToAddRows = false;
+            this.dgvServico.AllowUserToDeleteRows = false;
+            this.dgvServico.AllowUserToOrderColumns = true;
+            this.dgvServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvServico.Location = new System.Drawing.Point(10, 11);
+            this.dgvServico.Name = "dgvServico";
+            this.dgvServico.ReadOnly = true;
+            this.dgvServico.Size = new System.Drawing.Size(470, 215);
+            this.dgvServico.TabIndex = 36;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 15);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "ID";
+            // 
+            // tb_idServ
+            // 
+            this.tb_idServ.Location = new System.Drawing.Point(14, 91);
+            this.tb_idServ.Name = "tb_idServ";
+            this.tb_idServ.Size = new System.Drawing.Size(242, 20);
+            this.tb_idServ.TabIndex = 32;
             // 
             // FormServiço
             // 
@@ -167,13 +192,13 @@ namespace novodenovo
             this.Controls.Add(this.btn_novoServ);
             this.Controls.Add(this.btn_filtServ);
             this.Controls.Add(this.panel_cadServ);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvServico);
             this.Name = "FormServiço";
             this.Text = "FormServiço";
-           
+            this.Load += new System.EventHandler(this.FormServiço_Load_1);
             this.panel_cadServ.ResumeLayout(false);
             this.panel_cadServ.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServico)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,6 +215,8 @@ namespace novodenovo
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_nomeServ;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvServico;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tb_idServ;
     }
 }

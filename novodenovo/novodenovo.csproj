@@ -117,11 +117,11 @@
     <Compile Include="FormPedido.Designer.cs">
       <DependentUpon>FormPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormServiço.cs">
+    <Compile Include="FormServico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormServiço.Designer.cs">
-      <DependentUpon>FormServiço.cs</DependentUpon>
+    <Compile Include="FormServico.Designer.cs">
+      <DependentUpon>FormServico.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIMenu.cs">
       <SubType>Form</SubType>
@@ -143,8 +143,8 @@
     <EmbeddedResource Include="FormPedido.resx">
       <DependentUpon>FormPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormServiço.resx">
-      <DependentUpon>FormServiço.cs</DependentUpon>
+    <EmbeddedResource Include="FormServico.resx">
+      <DependentUpon>FormServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIMenu.resx">
       <DependentUpon>MDIMenu.cs</DependentUpon>

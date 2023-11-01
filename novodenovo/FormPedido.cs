@@ -34,14 +34,14 @@ namespace novodenovo
 
         private void btn_servico_Click(object sender, EventArgs e)
         {
-            Tela_servico telaServico = new Tela_servico();
+            FormServico telaServico = new FormServico();
             telaServico.Show();
             this.Visible = false;
         }
 
         private void btn_peca_Click(object sender, EventArgs e)
         {
-            Tela_peca telaPeca = new Tela_peca();
+            FormPeca telaPeca = new FormPeca();
             telaPeca.Show();
             this.Visible = false;
         }
@@ -52,6 +52,11 @@ namespace novodenovo
         }
 
         private void Tela_pedido_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
