@@ -34,8 +34,6 @@ namespace novodenovo
             this.btn_novoServ = new System.Windows.Forms.Button();
             this.btn_filtServ = new System.Windows.Forms.Button();
             this.panel_cadServ = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_idServ = new System.Windows.Forms.TextBox();
             this.btn_cancServ = new System.Windows.Forms.Button();
             this.btn_gravServ = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -90,39 +88,20 @@ namespace novodenovo
             // 
             // panel_cadServ
             // 
-            this.panel_cadServ.Controls.Add(this.label2);
             this.panel_cadServ.Controls.Add(this.btn_cancServ);
             this.panel_cadServ.Controls.Add(this.btn_gravServ);
-            this.panel_cadServ.Controls.Add(this.tb_idServ);
             this.panel_cadServ.Controls.Add(this.label3);
             this.panel_cadServ.Controls.Add(this.label1);
             this.panel_cadServ.Controls.Add(this.tb_nomeServ);
-            this.panel_cadServ.Location = new System.Drawing.Point(100, 12);
+            this.panel_cadServ.Location = new System.Drawing.Point(100, 54);
             this.panel_cadServ.Name = "panel_cadServ";
-            this.panel_cadServ.Size = new System.Drawing.Size(270, 162);
+            this.panel_cadServ.Size = new System.Drawing.Size(270, 120);
             this.panel_cadServ.TabIndex = 37;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 32);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 15);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "ID";
-            // 
-            // tb_idServ
-            // 
-            this.tb_idServ.Location = new System.Drawing.Point(10, 50);
-            this.tb_idServ.Name = "tb_idServ";
-            this.tb_idServ.Size = new System.Drawing.Size(242, 20);
-            this.tb_idServ.TabIndex = 32;
             // 
             // btn_cancServ
             // 
             this.btn_cancServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancServ.Location = new System.Drawing.Point(168, 117);
+            this.btn_cancServ.Location = new System.Drawing.Point(171, 76);
             this.btn_cancServ.Name = "btn_cancServ";
             this.btn_cancServ.Size = new System.Drawing.Size(88, 29);
             this.btn_cancServ.TabIndex = 30;
@@ -133,7 +112,7 @@ namespace novodenovo
             // btn_gravServ
             // 
             this.btn_gravServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_gravServ.Location = new System.Drawing.Point(85, 117);
+            this.btn_gravServ.Location = new System.Drawing.Point(88, 76);
             this.btn_gravServ.Name = "btn_gravServ";
             this.btn_gravServ.Size = new System.Drawing.Size(77, 29);
             this.btn_gravServ.TabIndex = 29;
@@ -157,7 +136,7 @@ namespace novodenovo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 73);
+            this.label1.Location = new System.Drawing.Point(10, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 0;
@@ -165,7 +144,7 @@ namespace novodenovo
             // 
             // tb_nomeServ
             // 
-            this.tb_nomeServ.Location = new System.Drawing.Point(10, 91);
+            this.tb_nomeServ.Location = new System.Drawing.Point(13, 50);
             this.tb_nomeServ.Name = "tb_nomeServ";
             this.tb_nomeServ.Size = new System.Drawing.Size(242, 20);
             this.tb_nomeServ.TabIndex = 1;
@@ -217,7 +196,5 @@ namespace novodenovo
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_nomeServ;
         private System.Windows.Forms.DataGridView dgvServico;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tb_idServ;
     }
 }

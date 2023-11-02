@@ -68,7 +68,7 @@ namespace novodenovo
             string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand("update aluno set nomeservico='" + dgvServico.Columns["nomeservico"] + "' where id=" + dgvServico.Columns["id"], conexaoMYSQL);
+            MySqlCommand comando = new MySqlCommand("update tb_servico set nomeservico='" + dgvServico.Columns["nomeservico"] + "' where id=" + dgvServico.Columns["id"], conexaoMYSQL);
             MessageBox.Show("Dados alterados!!!");
             CarregarDadosBanco();
         }
