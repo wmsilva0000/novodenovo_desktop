@@ -33,8 +33,6 @@ namespace novodenovo
             this.btn_sairPeca = new System.Windows.Forms.Button();
             this.btn_filtPeca = new System.Windows.Forms.Button();
             this.panel_cadPeca = new System.Windows.Forms.Panel();
-            this.cb_genero = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.btn_cancPeca = new System.Windows.Forms.Button();
             this.btn_gravPeca = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -84,40 +82,20 @@ namespace novodenovo
             // 
             this.panel_cadPeca.Controls.Add(this.tb_idpeca);
             this.panel_cadPeca.Controls.Add(this.Id);
-            this.panel_cadPeca.Controls.Add(this.cb_genero);
-            this.panel_cadPeca.Controls.Add(this.label2);
             this.panel_cadPeca.Controls.Add(this.btn_cancPeca);
             this.panel_cadPeca.Controls.Add(this.btn_gravPeca);
             this.panel_cadPeca.Controls.Add(this.label3);
             this.panel_cadPeca.Controls.Add(this.label1);
             this.panel_cadPeca.Controls.Add(this.tb_nomePeca);
-            this.panel_cadPeca.Location = new System.Drawing.Point(56, 57);
+            this.panel_cadPeca.Location = new System.Drawing.Point(70, 57);
             this.panel_cadPeca.Name = "panel_cadPeca";
-            this.panel_cadPeca.Size = new System.Drawing.Size(383, 118);
+            this.panel_cadPeca.Size = new System.Drawing.Size(369, 118);
             this.panel_cadPeca.TabIndex = 31;
-            // 
-            // cb_genero
-            // 
-            this.cb_genero.FormattingEnabled = true;
-            this.cb_genero.Location = new System.Drawing.Point(277, 48);
-            this.cb_genero.Name = "cb_genero";
-            this.cb_genero.Size = new System.Drawing.Size(94, 21);
-            this.cb_genero.TabIndex = 33;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(274, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 15);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Gerêro";
             // 
             // btn_cancPeca
             // 
             this.btn_cancPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancPeca.Location = new System.Drawing.Point(208, 75);
+            this.btn_cancPeca.Location = new System.Drawing.Point(156, 75);
             this.btn_cancPeca.Name = "btn_cancPeca";
             this.btn_cancPeca.Size = new System.Drawing.Size(88, 29);
             this.btn_cancPeca.TabIndex = 30;
@@ -127,7 +105,7 @@ namespace novodenovo
             // btn_gravPeca
             // 
             this.btn_gravPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_gravPeca.Location = new System.Drawing.Point(125, 75);
+            this.btn_gravPeca.Location = new System.Drawing.Point(73, 75);
             this.btn_gravPeca.Name = "btn_gravPeca";
             this.btn_gravPeca.Size = new System.Drawing.Size(77, 29);
             this.btn_gravPeca.TabIndex = 29;
@@ -143,7 +121,7 @@ namespace novodenovo
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(383, 21);
+            this.label3.Size = new System.Drawing.Size(369, 21);
             this.label3.TabIndex = 0;
             this.label3.Text = "Peça";
             // 
@@ -151,7 +129,7 @@ namespace novodenovo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 30);
+            this.label1.Location = new System.Drawing.Point(124, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 0;
@@ -159,7 +137,7 @@ namespace novodenovo
             // 
             // tb_nomePeca
             // 
-            this.tb_nomePeca.Location = new System.Drawing.Point(57, 49);
+            this.tb_nomePeca.Location = new System.Drawing.Point(127, 49);
             this.tb_nomePeca.Name = "tb_nomePeca";
             this.tb_nomePeca.Size = new System.Drawing.Size(214, 20);
             this.tb_nomePeca.TabIndex = 1;
@@ -181,7 +159,7 @@ namespace novodenovo
             // 
             this.Id.AutoSize = true;
             this.Id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Id.Location = new System.Drawing.Point(3, 31);
+            this.Id.Location = new System.Drawing.Point(70, 31);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(19, 15);
             this.Id.TabIndex = 34;
@@ -189,7 +167,7 @@ namespace novodenovo
             // 
             // tb_idpeca
             // 
-            this.tb_idpeca.Location = new System.Drawing.Point(4, 49);
+            this.tb_idpeca.Location = new System.Drawing.Point(73, 49);
             this.tb_idpeca.Name = "tb_idpeca";
             this.tb_idpeca.Size = new System.Drawing.Size(48, 20);
             this.tb_idpeca.TabIndex = 35;
@@ -250,8 +228,6 @@ namespace novodenovo
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_nomePeca;
         private System.Windows.Forms.DataGridView dgvPeca;
-        private System.Windows.Forms.ComboBox cb_genero;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_idpeca;
         private System.Windows.Forms.Label Id;
         private System.Windows.Forms.Button btnExcluirPeca;

@@ -38,14 +38,21 @@ namespace novodenovo
 
         private void btn_gravPeca_Click(object sender, EventArgs e)
         {
-            MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
-            meuSql.Open();
-            MySqlCommand comando = new MySqlCommand("insert into tb_peca(nomepeca, genero) values(" + tb_nomePeca.Text + ",'" + cb_genero.Text + "');", meuSql);
-            comando.ExecuteNonQuery();
 
-            MessageBox.Show("Registro Inserido com sucesso!");
-            tb_nomePeca.Text = "";
-            cb_genero.Text = "";
+            if (tb_nomePeca.Text == "")
+            {
+
+            }
+            else
+            {
+                MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                meuSql.Open();
+                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_peca(nomepeca) values(" + tb_nomePeca.Text + "');", meuSql);
+                comando.ExecuteNonQuery();
+
+                MessageBox.Show("Registro Inserido com sucesso!");
+                tb_nomePeca.Text = "";
+            }
         }
 
         private void btn_editPeca_Click(object sender, EventArgs e)
@@ -56,13 +63,12 @@ namespace novodenovo
             MySqlConnection conexaoMySql = new MySqlConnection(conexao);
             conexaoMySql.Open();
 
-            MySqlCommand command = new MySqlCommand("update tb_peca set nomepeca='" + tb_nomePeca.Text + "', genero='" + cb_genero.Text + "'where id_peca=" + tb_idpeca.Text, conexaoMySql);
+            MySqlCommand command = new MySqlCommand("update tb_peca set nomepeca='" + tb_nomePeca.Text + "'where id_peca=" + tb_idpeca.Text, conexaoMySql);
             
             MessageBox.Show("Dados alterados");
 
             tb_idpeca.Text = "";
             tb_nomePeca.Text = "";
-            cb_genero.Text = "";
             
             CarregarDadosBanco();
         }
@@ -71,7 +77,6 @@ namespace novodenovo
         {
             tb_idpeca.Text = dgvPeca.Rows[e.RowIndex].Cells[0].Value.ToString();
             tb_nomePeca.Text = dgvPeca.Rows[e.RowIndex].Cells[1].Value.ToString();
-            cb_genero.Text = dgvPeca.Rows[e.RowIndex].Cells[2].Value.ToString();
 
             panel_cadPeca.Visible = true;
         }
@@ -91,7 +96,6 @@ namespace novodenovo
                     MessageBox.Show("Dado excluído com sucesso!");
                     tb_idpeca.Text = "";
                     tb_nomePeca.Text = "";
-                    cb_genero.Text = "";
                     CarregarDadosBanco();
                 }
             }
