@@ -61,7 +61,6 @@ namespace novodenovo
         private void btn_novoServ_Click(object sender, EventArgs e)
         {
             panel_cadServ.Visible = true;
-
         }
 
         private void btn_editServ_Click(object sender, EventArgs e)
@@ -69,12 +68,14 @@ namespace novodenovo
             string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand("update aluno set nomeservico='" + tb_nomeServ.Text + "' where id=" + tb_idServ.Text, conexaoMYSQL);
-            comando.ExecuteNonQuery();
+            MySqlCommand comando = new MySqlCommand("update aluno set nomeservico='" + dgvServico.Columns["nomeservico"] + "' where id=" + dgvServico.Columns["id"], conexaoMYSQL);
             MessageBox.Show("Dados alterados!!!");
-            tb_nomeServ.Text = "";
-            tb_idServ.Text = "";
             CarregarDadosBanco();
+        }
+
+        private void dgvServico_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvServico.Columns["id"].ReadOnly = true;
         }
     }
 }

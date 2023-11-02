@@ -34,14 +34,14 @@ namespace novodenovo
             this.btn_novoServ = new System.Windows.Forms.Button();
             this.btn_filtServ = new System.Windows.Forms.Button();
             this.panel_cadServ = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_idServ = new System.Windows.Forms.TextBox();
             this.btn_cancServ = new System.Windows.Forms.Button();
             this.btn_gravServ = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_nomeServ = new System.Windows.Forms.TextBox();
             this.dgvServico = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_idServ = new System.Windows.Forms.TextBox();
             this.panel_cadServ.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServico)).BeginInit();
             this.SuspendLayout();
@@ -91,9 +91,9 @@ namespace novodenovo
             // panel_cadServ
             // 
             this.panel_cadServ.Controls.Add(this.label2);
-            this.panel_cadServ.Controls.Add(this.tb_idServ);
             this.panel_cadServ.Controls.Add(this.btn_cancServ);
             this.panel_cadServ.Controls.Add(this.btn_gravServ);
+            this.panel_cadServ.Controls.Add(this.tb_idServ);
             this.panel_cadServ.Controls.Add(this.label3);
             this.panel_cadServ.Controls.Add(this.label1);
             this.panel_cadServ.Controls.Add(this.tb_nomeServ);
@@ -101,6 +101,23 @@ namespace novodenovo
             this.panel_cadServ.Name = "panel_cadServ";
             this.panel_cadServ.Size = new System.Drawing.Size(270, 162);
             this.panel_cadServ.TabIndex = 37;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 15);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "ID";
+            // 
+            // tb_idServ
+            // 
+            this.tb_idServ.Location = new System.Drawing.Point(10, 50);
+            this.tb_idServ.Name = "tb_idServ";
+            this.tb_idServ.Size = new System.Drawing.Size(242, 20);
+            this.tb_idServ.TabIndex = 32;
             // 
             // btn_cancServ
             // 
@@ -140,7 +157,7 @@ namespace novodenovo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 31);
+            this.label1.Location = new System.Drawing.Point(7, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 0;
@@ -148,7 +165,7 @@ namespace novodenovo
             // 
             // tb_nomeServ
             // 
-            this.tb_nomeServ.Location = new System.Drawing.Point(14, 49);
+            this.tb_nomeServ.Location = new System.Drawing.Point(10, 91);
             this.tb_nomeServ.Name = "tb_nomeServ";
             this.tb_nomeServ.Size = new System.Drawing.Size(242, 20);
             this.tb_nomeServ.TabIndex = 1;
@@ -161,28 +178,12 @@ namespace novodenovo
             this.dgvServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServico.Location = new System.Drawing.Point(10, 11);
             this.dgvServico.Name = "dgvServico";
-            this.dgvServico.ReadOnly = true;
+            this.dgvServico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvServico.Size = new System.Drawing.Size(470, 215);
             this.dgvServico.TabIndex = 36;
+            this.dgvServico.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServico_CellContentClick);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 15);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "ID";
-            // 
-            // tb_idServ
-            // 
-            this.tb_idServ.Location = new System.Drawing.Point(14, 91);
-            this.tb_idServ.Name = "tb_idServ";
-            this.tb_idServ.Size = new System.Drawing.Size(242, 20);
-            this.tb_idServ.TabIndex = 32;
-            // 
-            // FormServiço
+            // FormServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,7 +194,7 @@ namespace novodenovo
             this.Controls.Add(this.btn_filtServ);
             this.Controls.Add(this.panel_cadServ);
             this.Controls.Add(this.dgvServico);
-            this.Name = "FormServiço";
+            this.Name = "FormServico";
             this.Text = "FormServiço";
             this.Load += new System.EventHandler(this.FormServiço_Load_1);
             this.panel_cadServ.ResumeLayout(false);
