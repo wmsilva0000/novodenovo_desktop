@@ -43,6 +43,7 @@ namespace novodenovo
             this.tb_idpeca = new System.Windows.Forms.TextBox();
             this.btnExcluirPeca = new System.Windows.Forms.Button();
             this.btnNovoPeca = new System.Windows.Forms.Button();
+            this.btnCancelarPeca = new System.Windows.Forms.Button();
             this.panel_cadPeca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeca)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +68,7 @@ namespace novodenovo
             this.btn_sairPeca.TabIndex = 34;
             this.btn_sairPeca.Text = "Sair";
             this.btn_sairPeca.UseVisualStyleBackColor = true;
+            this.btn_sairPeca.Click += new System.EventHandler(this.btn_sairPeca_Click);
             // 
             // btn_filtPeca
             // 
@@ -80,6 +82,7 @@ namespace novodenovo
             // 
             // panel_cadPeca
             // 
+            this.panel_cadPeca.Controls.Add(this.btnCancelarPeca);
             this.panel_cadPeca.Controls.Add(this.tb_idpeca);
             this.panel_cadPeca.Controls.Add(this.Id);
             this.panel_cadPeca.Controls.Add(this.btn_cancPeca);
@@ -99,8 +102,9 @@ namespace novodenovo
             this.btn_cancPeca.Name = "btn_cancPeca";
             this.btn_cancPeca.Size = new System.Drawing.Size(88, 29);
             this.btn_cancPeca.TabIndex = 30;
-            this.btn_cancPeca.Text = "Cancelar";
+            this.btn_cancPeca.Text = "Limpar";
             this.btn_cancPeca.UseVisualStyleBackColor = true;
+            this.btn_cancPeca.Click += new System.EventHandler(this.btn_cancPeca_Click);
             // 
             // btn_gravPeca
             // 
@@ -194,6 +198,17 @@ namespace novodenovo
             this.btnNovoPeca.UseVisualStyleBackColor = true;
             this.btnNovoPeca.Click += new System.EventHandler(this.btnNovoPeca_Click);
             // 
+            // btnCancelarPeca
+            // 
+            this.btnCancelarPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarPeca.Location = new System.Drawing.Point(250, 75);
+            this.btnCancelarPeca.Name = "btnCancelarPeca";
+            this.btnCancelarPeca.Size = new System.Drawing.Size(88, 29);
+            this.btnCancelarPeca.TabIndex = 36;
+            this.btnCancelarPeca.Text = "Cancelar";
+            this.btnCancelarPeca.UseVisualStyleBackColor = true;
+            this.btnCancelarPeca.Click += new System.EventHandler(this.btnCancelarPeca_Click);
+            // 
             // FormPeca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,5 +247,6 @@ namespace novodenovo
         private System.Windows.Forms.Label Id;
         private System.Windows.Forms.Button btnExcluirPeca;
         private System.Windows.Forms.Button btnNovoPeca;
+        private System.Windows.Forms.Button btnCancelarPeca;
     }
 }
