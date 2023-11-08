@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace novodenovo
 {
@@ -15,6 +16,49 @@ namespace novodenovo
         public Tela_pedido()
         {
             InitializeComponent();
+            cboPeca();
+        }
+        MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+
+        void cboPeca()
+        {
+            try
+            {
+                string tb_peca = "select * from tb_peca";
+                MySqlCommand cmdSalvar = new MySqlCommand(tb_peca, conexaoMYSQL);
+                conexaoMYSQL.Open();
+                DataSet ds = new DataSet();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmdSalvar);
+                adapter.Fill(ds);
+                cbPeca.DataSource = ds.Tables[0];
+                cbPeca.DisplayMember = "nomepeca";
+                cbPeca.ValueMember = "id";
+
+                conexaoMYSQL.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            try
+            {
+                string tb_servico = "select * from tb_servico";
+                MySqlCommand cmdSalvarServ = new MySqlCommand(tb_servico, conexaoMYSQL);
+                conexaoMYSQL.Open();
+                DataSet dsServ = new DataSet();
+                MySqlDataAdapter adapterServ = new MySqlDataAdapter(cmdSalvarServ);
+                adapterServ.Fill(dsServ);
+                cbServico.DataSource = dsServ.Tables[0];
+                cbServico.DisplayMember = "nomeservico";
+                cbServico.ValueMember = "id";
+
+                conexaoMYSQL.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)

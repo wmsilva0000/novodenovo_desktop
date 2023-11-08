@@ -68,7 +68,6 @@ namespace novodenovo
             this.btn_sairPeca.TabIndex = 34;
             this.btn_sairPeca.Text = "Sair";
             this.btn_sairPeca.UseVisualStyleBackColor = true;
-            this.btn_sairPeca.Click += new System.EventHandler(this.btn_sairPeca_Click);
             // 
             // btn_filtPeca
             // 
@@ -104,7 +103,6 @@ namespace novodenovo
             this.btn_cancPeca.TabIndex = 30;
             this.btn_cancPeca.Text = "Limpar";
             this.btn_cancPeca.UseVisualStyleBackColor = true;
-            this.btn_cancPeca.Click += new System.EventHandler(this.btn_cancPeca_Click);
             // 
             // btn_gravPeca
             // 
@@ -207,7 +205,6 @@ namespace novodenovo
             this.btnCancelarPeca.TabIndex = 36;
             this.btnCancelarPeca.Text = "Cancelar";
             this.btnCancelarPeca.UseVisualStyleBackColor = true;
-            this.btnCancelarPeca.Click += new System.EventHandler(this.btnCancelarPeca_Click);
             // 
             // FormPeca
             // 

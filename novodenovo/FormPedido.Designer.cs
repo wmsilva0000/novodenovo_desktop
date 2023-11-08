@@ -47,8 +47,8 @@ namespace novodenovo
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbPeca = new System.Windows.Forms.ComboBox();
+            this.cbServico = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -230,28 +230,47 @@ namespace novodenovo
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Amarelo",
+            "Azul",
+            "Bege",
+            "Bordô",
+            "Branco",
+            "Caramelo ",
+            "Cinza",
+            "Creme ",
+            "Laranja",
+            "Lilás",
+            "Marrom",
+            "Preto",
+            "Rosa",
+            "Roxo",
+            "Salmão",
+            "Verde ",
+            "Vermelho",
+            "Vinho"});
             this.comboBox1.Location = new System.Drawing.Point(201, 45);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(125, 23);
             this.comboBox1.TabIndex = 55;
             // 
-            // comboBox2
+            // cbPeca
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(70, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(125, 23);
-            this.comboBox2.TabIndex = 56;
+            this.cbPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPeca.FormattingEnabled = true;
+            this.cbPeca.Location = new System.Drawing.Point(70, 45);
+            this.cbPeca.Name = "cbPeca";
+            this.cbPeca.Size = new System.Drawing.Size(125, 23);
+            this.cbPeca.TabIndex = 56;
             // 
-            // comboBox3
+            // cbServico
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(332, 45);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(125, 23);
-            this.comboBox3.TabIndex = 57;
+            this.cbServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbServico.FormattingEnabled = true;
+            this.cbServico.Location = new System.Drawing.Point(332, 45);
+            this.cbServico.Name = "cbServico";
+            this.cbServico.Size = new System.Drawing.Size(125, 23);
+            this.cbServico.TabIndex = 57;
             // 
             // dateTimePicker1
             // 
@@ -319,9 +338,9 @@ namespace novodenovo
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.cbServico);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cbPeca);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.textBox7);
@@ -389,8 +408,8 @@ namespace novodenovo
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbPeca;
+        private System.Windows.Forms.ComboBox cbServico;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
