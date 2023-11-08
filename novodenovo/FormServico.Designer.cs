@@ -40,8 +40,17 @@ namespace novodenovo
             this.label1 = new System.Windows.Forms.Label();
             this.tb_nomeServ = new System.Windows.Forms.TextBox();
             this.dgvServico = new System.Windows.Forms.DataGridView();
+            this.panel_edit = new System.Windows.Forms.Panel();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_edit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tb_nomeEdit = new System.Windows.Forms.TextBox();
+            this.tb_id = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel_cadServ.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServico)).BeginInit();
+            this.panel_edit.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_editServ
@@ -157,16 +166,99 @@ namespace novodenovo
             this.dgvServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServico.Location = new System.Drawing.Point(10, 11);
             this.dgvServico.Name = "dgvServico";
+            this.dgvServico.ReadOnly = true;
             this.dgvServico.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvServico.Size = new System.Drawing.Size(470, 215);
             this.dgvServico.TabIndex = 36;
-            this.dgvServico.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServico_CellContentClick);
+            // 
+            // panel_edit
+            // 
+            this.panel_edit.Controls.Add(this.label5);
+            this.panel_edit.Controls.Add(this.tb_id);
+            this.panel_edit.Controls.Add(this.btn_cancelar);
+            this.panel_edit.Controls.Add(this.btn_edit);
+            this.panel_edit.Controls.Add(this.label2);
+            this.panel_edit.Controls.Add(this.label4);
+            this.panel_edit.Controls.Add(this.tb_nomeEdit);
+            this.panel_edit.Location = new System.Drawing.Point(100, 40);
+            this.panel_edit.Name = "panel_edit";
+            this.panel_edit.Size = new System.Drawing.Size(270, 162);
+            this.panel_edit.TabIndex = 42;
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.Location = new System.Drawing.Point(167, 113);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(88, 29);
+            this.btn_cancelar.TabIndex = 30;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit.Location = new System.Drawing.Point(88, 113);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(77, 29);
+            this.btn_edit.TabIndex = 29;
+            this.btn_edit.Text = "Editar";
+            this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Blue;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(270, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Serviço";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(10, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 15);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Nome";
+            // 
+            // tb_nomeEdit
+            // 
+            this.tb_nomeEdit.Location = new System.Drawing.Point(13, 87);
+            this.tb_nomeEdit.Name = "tb_nomeEdit";
+            this.tb_nomeEdit.Size = new System.Drawing.Size(242, 20);
+            this.tb_nomeEdit.TabIndex = 1;
+            // 
+            // tb_id
+            // 
+            this.tb_id.Location = new System.Drawing.Point(13, 46);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.Size = new System.Drawing.Size(242, 20);
+            this.tb_id.TabIndex = 31;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(10, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 15);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "ID";
             // 
             // FormServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 271);
+            this.Controls.Add(this.panel_edit);
             this.Controls.Add(this.btn_editServ);
             this.Controls.Add(this.btn_sairServ);
             this.Controls.Add(this.btn_novoServ);
@@ -179,6 +271,8 @@ namespace novodenovo
             this.panel_cadServ.ResumeLayout(false);
             this.panel_cadServ.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServico)).EndInit();
+            this.panel_edit.ResumeLayout(false);
+            this.panel_edit.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -196,5 +290,13 @@ namespace novodenovo
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_nomeServ;
         private System.Windows.Forms.DataGridView dgvServico;
+        private System.Windows.Forms.Panel panel_edit;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tb_id;
+        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.Button btn_edit;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tb_nomeEdit;
     }
 }

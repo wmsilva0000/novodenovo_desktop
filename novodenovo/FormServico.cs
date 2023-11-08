@@ -18,11 +18,6 @@ namespace novodenovo
             InitializeComponent();
         }
 
-        private void FormServiço_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_gravServ_Click(object sender, EventArgs e)
         {
             if (tb_nomeServ.Text == "")
@@ -31,8 +26,11 @@ namespace novodenovo
             }
             else 
             {
-                MessageBox.Show("Serviço cadastrado com sucesso");
-                panel_cadServ.Visible = false;
+                MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                meuSql.Open();
+                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_servico(nomeservico) values(" + tb_nomeServ.Text +"');", meuSql);
+                MessageBox.Show("Serviço cadastrado com sucesso!");
+                CarregarDadosBanco();
             }
         }
 
@@ -44,6 +42,8 @@ namespace novodenovo
         private void FormServiço_Load_1(object sender, EventArgs e)
         {
             CarregarDadosBanco();
+            panel_cadServ.Visible = false;
+            panel_edit.Visible = false;
         }
 
         private void CarregarDadosBanco()
@@ -65,17 +65,22 @@ namespace novodenovo
 
         private void btn_editServ_Click(object sender, EventArgs e)
         {
+            panel_edit.Visible = true;
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
             string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand("update tb_servico set nomeservico='" + dgvServico.Columns["nomeservico"] + "' where id=" + dgvServico.Columns["id"], conexaoMYSQL);
+            MySqlCommand comando = new MySqlCommand("update tb_servico set nomeservico='" + tb_nomeEdit.Text + "' where id=" + tb_id.Text, conexaoMYSQL);
             MessageBox.Show("Dados alterados!!!");
             CarregarDadosBanco();
         }
 
-        private void dgvServico_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_cancelar_Click(object sender, EventArgs e)
         {
-            dgvServico.Columns["id"].ReadOnly = true;
+            panel_edit.Visible = false;
         }
     }
 }
