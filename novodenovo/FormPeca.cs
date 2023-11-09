@@ -20,6 +20,8 @@ namespace novodenovo
 
         private void FormPeca_Load(object sender, EventArgs e)
         {
+            panel_cadPeca.Visible = false;
+            panel_edit.Visible = false;
             CarregarDadosBanco();
         }
 
@@ -47,63 +49,68 @@ namespace novodenovo
             {
                 MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
                 meuSql.Open();
-                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_peca(nomepeca) values(" + tb_nomePeca.Text + "');", meuSql);
+                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_peca(nomepeca) values('" + tb_nomePeca.Text + "');", meuSql);
                 comando.ExecuteNonQuery();
 
                 MessageBox.Show("Registro Inserido com sucesso!");
+                CarregarDadosBanco();
                 tb_nomePeca.Text = "";
+
             }
         }
 
         private void btn_editPeca_Click(object sender, EventArgs e)
         {
-            panel_cadPeca.Visible = true;
-
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-            MySqlConnection conexaoMySql = new MySqlConnection(conexao);
-            conexaoMySql.Open();
-
-            MySqlCommand command = new MySqlCommand("update tb_peca set nomepeca='" + tb_nomePeca.Text + "'where id_peca=" + tb_idpeca.Text, conexaoMySql);
-            
-            MessageBox.Show("Dados alterados");
-
-            tb_idpeca.Text = "";
-            tb_nomePeca.Text = "";
-            
-            CarregarDadosBanco();
+            panel_edit.Visible = true;
         }
 
         private void dgvPeca_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            tb_idpeca.Text = dgvPeca.Rows[e.RowIndex].Cells[0].Value.ToString();
             tb_nomePeca.Text = dgvPeca.Rows[e.RowIndex].Cells[1].Value.ToString();
 
             panel_cadPeca.Visible = true;
         }
 
-        private void btnExcluirPeca_Click(object sender, EventArgs e)
-        {
-            {
-                DialogResult caixaMensagem = MessageBox.Show("Deseja realmente exluir essa peça?", "", MessageBoxButtons.YesNo);
-
-                if (caixaMensagem == DialogResult.Yes)
-                {
-                    string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-                    MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
-                    conexaoMYSQL.Open();
-                    MySqlCommand comando = new MySqlCommand("delete from tb_peca where id_peca=" + tb_idpeca.Text + ";", conexaoMYSQL);
-                    comando.ExecuteNonQuery();
-                    MessageBox.Show("Dado excluído com sucesso!");
-                    tb_idpeca.Text = "";
-                    tb_nomePeca.Text = "";
-                    CarregarDadosBanco();
-                }
-            }
-        }
 
         private void btnNovoPeca_Click(object sender, EventArgs e)
         {
             panel_cadPeca.Visible = true;
+        }
+
+        private void btnCancelarPeca_Click(object sender, EventArgs e)
+        {
+            panel_cadPeca.Visible = false;
+        }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+        
+
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            MySqlConnection conexaoMySql = new MySqlConnection(conexao);
+            conexaoMySql.Open();
+
+            MySqlCommand comando = new MySqlCommand("update tb_peca set nomepeca='" + tb_nomepecaEdit.Text + "' where id=" + tb_idpeca.Text, conexaoMySql);
+            comando.ExecuteNonQuery();
+
+            MessageBox.Show("Dados alterados");
+
+            tb_idpeca.Text = "";
+            tb_nomepecaEdit.Text = "";
+
+            CarregarDadosBanco();
+        }
+
+        private void btn_canc_Click(object sender, EventArgs e)
+        {
+            panel_edit.Visible = false;
+        }
+
+        private void btn_sairPeca_Click(object sender, EventArgs e)
+        {
+            MDIMenu menu = new MDIMenu();
+            menu.Show();
+            this.Visible = false;
         }
     }
 }

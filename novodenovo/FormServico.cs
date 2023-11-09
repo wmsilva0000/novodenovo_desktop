@@ -26,9 +26,10 @@ namespace novodenovo
             }
             else 
             {
-                MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
-                meuSql.Open();
-                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_servico(nomeservico) values(" + tb_nomeServ.Text +"');", meuSql);
+                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_servico(nomeservico) values('" + tb_nomeServ.Text +"');", conexaoMYSQL);
+                comando.ExecuteNonQuery();
                 MessageBox.Show("Serviço cadastrado com sucesso!");
                 CarregarDadosBanco();
             }
@@ -74,6 +75,7 @@ namespace novodenovo
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand("update tb_servico set nomeservico='" + tb_nomeEdit.Text + "' where id=" + tb_id.Text, conexaoMYSQL);
+            comando.ExecuteNonQuery();
             MessageBox.Show("Dados alterados!!!");
             CarregarDadosBanco();
         }
@@ -81,6 +83,13 @@ namespace novodenovo
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             panel_edit.Visible = false;
+        }
+
+        private void btn_sairServ_Click(object sender, EventArgs e)
+        {
+            MDIMenu menu = new MDIMenu();
+            menu.Show();
+            this.Visible = false;
         }
     }
 }

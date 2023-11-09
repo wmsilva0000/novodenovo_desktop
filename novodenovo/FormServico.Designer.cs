@@ -73,6 +73,7 @@ namespace novodenovo
             this.btn_sairServ.TabIndex = 40;
             this.btn_sairServ.Text = "Sair";
             this.btn_sairServ.UseVisualStyleBackColor = true;
+            this.btn_sairServ.Click += new System.EventHandler(this.btn_sairServ_Click);
             // 
             // btn_novoServ
             // 
