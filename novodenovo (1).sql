@@ -1,14 +1,6 @@
 create database novodenovo;
 use novodenovo;
 
-create table tb_funcionario(
-id int auto_increment,
-nome varchar (50),
-cpf char (11),
-telefone char (11),
-constraint pk_funcionario primary key (id)
-);
-
 create table tb_cliente(
 id int auto_increment,
 nome varchar (50),
@@ -25,7 +17,6 @@ constraint pk_servico primary key (id)
 create table tb_peca(
 	id int auto_increment,
 	nomepeca varchar(50),
-	valor_peca int,
 	constraint pk_peca primary key (id)
 );
 
