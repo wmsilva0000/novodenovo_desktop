@@ -63,18 +63,7 @@ namespace novodenovo
            
         }
 
-        private void CarregarDadosBanco()
-        {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
-            conexaoMYSQL.Open();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter(
-                "select nome, telefone from tb_cliente where telefone=" + masked_telefone, conexaoMYSQL);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            dgvPedido.DataSource = dt;
-        }
+        
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
