@@ -13,42 +13,19 @@ namespace novodenovo
 {
     public partial class FormCliente : Form
     {
-        bool blEditar = false;
+ 
         private void MostraDados()
         {
-            //instrucao para abrir a conexao com o banco de dados
-            string mSTrConn = "";
-            MySqlConnection mysql = new MySqlConnection(mSTrConn);
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            conexaoMYSQL.Open();
 
-            try
-            {
-                mysql.Open();
+            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from tb_cliente", conexaoMYSQL);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dgvCliente.DataSource = dt;
 
-                string mSql = "select id,nome,telefone from tb_cliente ";
 
-                using (MySqlCommand cmd = new MySqlCommand(mSql,mysql))
-                {
-                    MySqlDataAdapter mda = new MySqlDataAdapter(cmd);
-                    DataTable mDt = new DataTable();
-
-                    mda.Fill(mDt);
-
-                    dataGridView1.DataSource = mDt;
-                }
-
-            }
-            catch (Exception err)
-            {
-
-                MessageBox.Show(err.Message);
-            }
-            finally
-            {
-                if (mysql.State == ConnectionState.Open)
-                {
-                    mysql.Close();
-                }
-            }
 
         }
         public FormCliente()
@@ -75,13 +52,14 @@ namespace novodenovo
         {
             
             panelCadastro.Show();
-            blEditar = false;
+            
         }
 
         private void buttonEditar_Click(object sender, EventArgs e)
         {
-            panelCadastro.Show();
-            blEditar = true;
+            //panelCadastro.Show();
+            //blEditar = true;
+            
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -91,64 +69,21 @@ namespace novodenovo
 
         private void buttonGravar_Click(object sender, EventArgs e)
         {
-            if (textBoxNome.Text==string.Empty)
+            if (tb_nome.Text == "" && masked_tb_telefone.Text == "")
             {
-                MessageBox.Show("Digite o nome do cliente");
-                textBoxNome.Select();
-                return;
-            }
 
-            if (maskedTextBoxTelefone.Text.Length<8)
-            {
-                MessageBox.Show("Digite o telefone do cliente");
-                maskedTextBoxTelefone.Select();
-                return;
-
-            }
-
-            if (blEditar)
-            {
-                //CODIGO PARA UPDATE
-
-                //ATUALIZA A DATAGRID
-                panelCadastro.Hide();
             }
             else
             {
-                //CODIGO PARA INSERT
-                string mSql = "insert into tb_cliente(nome,telefone)values(@nome,@telefone)";
-                string mStrConn = "";//string de conexao com o banco de dados
-                MySqlConnection mySql = new MySqlConnection(mStrConn);
-
-                try
-                {
-                    mySql.Open();
-                    using (MySqlCommand cmd = new MySqlCommand(mSql,mySql))
-                    {
-                        cmd.Parameters.AddWithValue("@nome", textBoxNome.Text);
-                        cmd.Parameters.AddWithValue("@telefone", maskedTextBoxTelefone.Text);
-                        cmd.ExecuteNonQuery();
-
-                    }
-                }
-                catch (Exception err)
-                {
-                    MessageBox.Show(err.Message);
-                }
-                finally
-                {
-                    if(mySql.State == ConnectionState.Open)
-                    {
-                        mySql.Close();
-                    }
-                }
-                
-                textBoxNome.Text = "";
-                maskedTextBoxTelefone.Text = "";
-                maskedTextBoxTelefone.Mask = "(##) # ####-####";
-                textBoxNome.Select();
+                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_cliente(nome, telefone) values('" + tb_nome.Text + "','"+ masked_tb_telefone.Text + "');", conexaoMYSQL);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Serviço cadastrado com sucesso!");
+                MostraDados();
             }
-            MostraDados();
+
+           
 
             //MENSAGEM DE CONFIRMACAO
 

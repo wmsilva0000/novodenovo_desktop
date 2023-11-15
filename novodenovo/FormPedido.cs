@@ -59,6 +59,21 @@ namespace novodenovo
             {
                 MessageBox.Show(ex.Message);
             }
+
+           
+        }
+
+        private void CarregarDadosBanco()
+        {
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            conexaoMYSQL.Open();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(
+                "select nome, telefone from tb_cliente where telefone=" + masked_telefone, conexaoMYSQL);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dgvPedido.DataSource = dt;
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -66,10 +81,7 @@ namespace novodenovo
 
         }
 
-        private void serviçosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+    
 
         private void btn_confirmar_Click(object sender, EventArgs e)
         {
@@ -92,7 +104,7 @@ namespace novodenovo
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Tela_pedido_Load(object sender, EventArgs e)

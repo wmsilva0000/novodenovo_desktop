@@ -34,7 +34,6 @@ namespace novodenovo
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_confirmar = new System.Windows.Forms.Button();
-            this.btn_limpar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -52,13 +51,14 @@ namespace novodenovo
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.masked_telefone = new System.Windows.Forms.MaskedTextBox();
+            this.dgvPedido = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,22 +102,13 @@ namespace novodenovo
             // 
             // btn_confirmar
             // 
-            this.btn_confirmar.Location = new System.Drawing.Point(511, 499);
+            this.btn_confirmar.Location = new System.Drawing.Point(533, 499);
             this.btn_confirmar.Name = "btn_confirmar";
             this.btn_confirmar.Size = new System.Drawing.Size(89, 32);
             this.btn_confirmar.TabIndex = 37;
             this.btn_confirmar.Text = "Confirmar";
             this.btn_confirmar.UseVisualStyleBackColor = true;
             this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
-            // 
-            // btn_limpar
-            // 
-            this.btn_limpar.Location = new System.Drawing.Point(330, 499);
-            this.btn_limpar.Name = "btn_limpar";
-            this.btn_limpar.Size = new System.Drawing.Size(86, 32);
-            this.btn_limpar.TabIndex = 36;
-            this.btn_limpar.Text = "Limpar";
-            this.btn_limpar.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -182,7 +173,7 @@ namespace novodenovo
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(145, 499);
+            this.button3.Location = new System.Drawing.Point(160, 499);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 32);
             this.button3.TabIndex = 47;
@@ -286,7 +277,7 @@ namespace novodenovo
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.masked_telefone);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -309,29 +300,30 @@ namespace novodenovo
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // maskedTextBox1
+            // masked_telefone
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(6, 45);
-            this.maskedTextBox1.Mask = "(##) # ####-####";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = ' ';
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 21);
-            this.maskedTextBox1.TabIndex = 62;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.masked_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.masked_telefone.Location = new System.Drawing.Point(6, 45);
+            this.masked_telefone.Mask = "(##) # ####-####";
+            this.masked_telefone.Name = "masked_telefone";
+            this.masked_telefone.PromptChar = ' ';
+            this.masked_telefone.Size = new System.Drawing.Size(100, 21);
+            this.masked_telefone.TabIndex = 62;
+            this.masked_telefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // dataGridView2
+            // dgvPedido
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(18, 297);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(766, 180);
-            this.dataGridView2.TabIndex = 62;
+            this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPedido.Location = new System.Drawing.Point(18, 328);
+            this.dgvPedido.Name = "dgvPedido";
+            this.dgvPedido.Size = new System.Drawing.Size(766, 149);
+            this.dgvPedido.TabIndex = 62;
             // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
@@ -351,10 +343,20 @@ namespace novodenovo
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(13, 109);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(774, 172);
+            this.groupBox2.Size = new System.Drawing.Size(774, 203);
             this.groupBox2.TabIndex = 63;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Serviço";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.button2.Location = new System.Drawing.Point(6, 158);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 38);
+            this.button2.TabIndex = 64;
+            this.button2.Text = "Novo serviço";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // textBox8
             // 
@@ -371,18 +373,17 @@ namespace novodenovo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 578);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dgvPedido);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_confirmar);
-            this.Controls.Add(this.btn_limpar);
             this.Name = "Tela_pedido";
             this.Text = "Pedido";
             this.Load += new System.EventHandler(this.Tela_pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -395,7 +396,6 @@ namespace novodenovo
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_confirmar;
-        private System.Windows.Forms.Button btn_limpar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
@@ -413,9 +413,10 @@ namespace novodenovo
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.MaskedTextBox masked_telefone;
+        private System.Windows.Forms.DataGridView dgvPedido;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button2;
     }
 }
