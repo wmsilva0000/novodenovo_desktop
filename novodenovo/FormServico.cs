@@ -26,12 +26,13 @@ namespace novodenovo
             }
             else 
             {
-                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=mjbezerra");
                 conexaoMYSQL.Open();
                 MySqlCommand comando = new MySqlCommand("INSERT INTO tb_servico(nomeservico) values('" + tb_nomeServ.Text +"');", conexaoMYSQL);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Serviço cadastrado com sucesso!");
                 CarregarDadosBanco();
+                tb_nomeServ.Text = "";
             }
         }
 
@@ -49,7 +50,7 @@ namespace novodenovo
 
         private void CarregarDadosBanco()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
 
@@ -64,20 +65,16 @@ namespace novodenovo
             panel_cadServ.Visible = true;
         }
 
-        private void btn_editServ_Click(object sender, EventArgs e)
-        {
-            panel_edit.Visible = true;
-        }
-
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand("update tb_servico set nomeservico='" + tb_nomeEdit.Text + "' where id=" + tb_id.Text, conexaoMYSQL);
             comando.ExecuteNonQuery();
             MessageBox.Show("Dados alterados!!!");
             CarregarDadosBanco();
+            panel_edit.Visible = false;
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
@@ -90,6 +87,11 @@ namespace novodenovo
             MDIMenu menu = new MDIMenu();
             menu.Show();
             this.Visible = false;
+        }
+        private void dgvServico_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            panel_edit.Visible = true;
+            tb_id.Text = dgvServico.Rows[e.RowIndex].Cells[0].Value.ToString(); ;
         }
     }
 }

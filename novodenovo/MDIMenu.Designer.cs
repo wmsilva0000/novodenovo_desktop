@@ -32,19 +32,20 @@ namespace novodenovo
             this.components = new System.ComponentModel.Container();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pendênciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.históricoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_servico = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_peca = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faturamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pedidosToolStripMenuItem,
             this.pendênciasToolStripMenuItem,
@@ -53,20 +54,27 @@ namespace novodenovo
             this.faturamentoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(632, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(843, 28);
             this.menuStrip1.TabIndex = 59;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // pedidosToolStripMenuItem
+            // 
+            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.pedidosToolStripMenuItem.Text = "Pedidos";
+            this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
             // 
             // pendênciasToolStripMenuItem
             // 
             this.pendênciasToolStripMenuItem.Name = "pendênciasToolStripMenuItem";
-            this.pendênciasToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.pendênciasToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.pendênciasToolStripMenuItem.Text = "Pendências";
             // 
             // históricoToolStripMenuItem
             // 
             this.históricoToolStripMenuItem.Name = "históricoToolStripMenuItem";
-            this.históricoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.históricoToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.históricoToolStripMenuItem.Text = "Histórico";
             // 
             // serviçosToolStripMenuItem
@@ -76,50 +84,44 @@ namespace novodenovo
             this.btn_servico,
             this.btn_peca});
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.serviçosToolStripMenuItem.Text = "Cadastrar";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.btn_cliente_Click);
             // 
             // btn_servico
             // 
             this.btn_servico.Name = "btn_servico";
-            this.btn_servico.Size = new System.Drawing.Size(180, 22);
+            this.btn_servico.Size = new System.Drawing.Size(224, 26);
             this.btn_servico.Text = "Serviço";
             this.btn_servico.Click += new System.EventHandler(this.btn_servico_Click);
             // 
             // btn_peca
             // 
             this.btn_peca.Name = "btn_peca";
-            this.btn_peca.Size = new System.Drawing.Size(180, 22);
+            this.btn_peca.Size = new System.Drawing.Size(224, 26);
             this.btn_peca.Text = "Peça";
             this.btn_peca.Click += new System.EventHandler(this.btn_peca_Click);
-            // 
-            // clienteToolStripMenuItem
-            // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // faturamentoToolStripMenuItem
             // 
             this.faturamentoToolStripMenuItem.Name = "faturamentoToolStripMenuItem";
-            this.faturamentoToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.faturamentoToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.faturamentoToolStripMenuItem.Text = "Faturamento";
-            // 
-            // pedidosToolStripMenuItem
-            // 
-            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.pedidosToolStripMenuItem.Text = "Pedidos";
-            this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
             // 
             // MDIMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 453);
+            this.ClientSize = new System.Drawing.Size(843, 558);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MDIMenu";
             this.Text = "MDIMenu";
             this.Load += new System.EventHandler(this.MDIMenu_Load);

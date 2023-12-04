@@ -18,8 +18,19 @@ namespace novodenovo
             InitializeComponent();
             cboPeca();
         }
-        MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+        MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=mjbezerra");
 
+        private void CarregarDadosBanco()
+        {
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
+            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            conexaoMYSQL.Open();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from tb_servico", conexaoMYSQL);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dgvPedido.DataSource = dt;
+        }
         void cboPeca()
         {
             try
@@ -90,10 +101,13 @@ namespace novodenovo
             telaPeca.Show();
             this.Visible = false;
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
+            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            conexaoMYSQL.Open();
+            MySqlCommand comando = new MySqlCommand ("select nome from tb_cliente where telefone='" + masked_telefone.Text + "';", conexaoMYSQL);
+            comando.ExecuteNonQuery();
         }
 
         private void Tela_pedido_Load(object sender, EventArgs e)

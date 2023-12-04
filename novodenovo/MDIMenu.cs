@@ -54,5 +54,12 @@ namespace novodenovo
             telaPeca.Show();
             this.Visible = false;
         }
+
+        private void btn_cliente_Click(object sender, EventArgs e)
+        {
+            FormCliente telaCliente = new FormCliente();
+            telaCliente.Show();
+            this.Visible = false;
+        }
     }
 }

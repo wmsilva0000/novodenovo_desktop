@@ -27,7 +27,7 @@ namespace novodenovo
 
         private void CarregarDadosBanco()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
             MySqlConnection conexaoMySql = new MySqlConnection(conexao);
             conexaoMySql.Open();
 
@@ -47,7 +47,7 @@ namespace novodenovo
             }
             else
             {
-                MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=mjbezerra");
                 meuSql.Open();
                 MySqlCommand comando = new MySqlCommand("INSERT INTO tb_peca(nomepeca) values('" + tb_nomePeca.Text + "');", meuSql);
                 comando.ExecuteNonQuery();
@@ -58,20 +58,6 @@ namespace novodenovo
 
             }
         }
-
-        private void btn_editPeca_Click(object sender, EventArgs e)
-        {
-            panel_edit.Visible = true;
-        }
-
-        private void dgvPeca_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            tb_nomePeca.Text = dgvPeca.Rows[e.RowIndex].Cells[1].Value.ToString();
-
-            panel_cadPeca.Visible = true;
-        }
-
-
         private void btnNovoPeca_Click(object sender, EventArgs e)
         {
             panel_cadPeca.Visible = true;
@@ -86,19 +72,15 @@ namespace novodenovo
         {
         
 
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
             MySqlConnection conexaoMySql = new MySqlConnection(conexao);
             conexaoMySql.Open();
 
             MySqlCommand comando = new MySqlCommand("update tb_peca set nomepeca='" + tb_nomepecaEdit.Text + "' where id=" + tb_idpeca.Text, conexaoMySql);
             comando.ExecuteNonQuery();
-
-            MessageBox.Show("Dados alterados");
-
-            tb_idpeca.Text = "";
-            tb_nomepecaEdit.Text = "";
-
+            MessageBox.Show("Dados alterados!!!");
             CarregarDadosBanco();
+            panel_edit.Visible = false;
         }
 
         private void btn_canc_Click(object sender, EventArgs e)
@@ -111,6 +93,12 @@ namespace novodenovo
             MDIMenu menu = new MDIMenu();
             menu.Show();
             this.Visible = false;
+        }
+
+        private void dgvPeca_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            panel_edit.Visible = true;
+            tb_idpeca.Text = dgvPeca.Rows[e.RowIndex].Cells[0].Value.ToString(); ;
         }
     }
 }

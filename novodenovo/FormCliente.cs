@@ -16,7 +16,7 @@ namespace novodenovo
  
         private void MostraDados()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
 
@@ -55,13 +55,6 @@ namespace novodenovo
             
         }
 
-        private void buttonEditar_Click(object sender, EventArgs e)
-        {
-            //panelCadastro.Show();
-            //blEditar = true;
-            
-        }
-
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             panelCadastro.Hide();
@@ -75,18 +68,25 @@ namespace novodenovo
             }
             else
             {
-                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=mjbezerra");
                 conexaoMYSQL.Open();
-                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_cliente(nome, telefone) values('" + tb_nome.Text + "','"+ masked_tb_telefone.Text + "');", conexaoMYSQL);
+                MySqlCommand comando = new MySqlCommand("INSERT INTO tb_cliente(nome, telefone) values('" + tb_nome.Text + "','" + masked_tb_telefone.Text + "');", conexaoMYSQL);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Serviço cadastrado com sucesso!");
                 MostraDados();
+                tb_nome.Text = "";
+                masked_tb_telefone.Text = "";
             }
 
            
 
             //MENSAGEM DE CONFIRMACAO
 
+
+        }
+
+        private void dgvCliente_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

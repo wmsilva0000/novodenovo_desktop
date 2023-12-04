@@ -41,7 +41,6 @@ namespace novodenovo
             this.buttonFiltrar = new System.Windows.Forms.Button();
             this.buttonNovo = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
-            this.buttonEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.panelCadastro.SuspendLayout();
             this.SuspendLayout();
@@ -50,26 +49,29 @@ namespace novodenovo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 31);
+            this.label1.Location = new System.Drawing.Point(15, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.Size = new System.Drawing.Size(53, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
             // 
             // tb_nome
             // 
-            this.tb_nome.Location = new System.Drawing.Point(14, 49);
+            this.tb_nome.Location = new System.Drawing.Point(19, 60);
+            this.tb_nome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_nome.Name = "tb_nome";
-            this.tb_nome.Size = new System.Drawing.Size(171, 20);
+            this.tb_nome.Size = new System.Drawing.Size(227, 22);
             this.tb_nome.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(184, 31);
+            this.label2.Location = new System.Drawing.Point(245, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 15);
+            this.label2.Size = new System.Drawing.Size(73, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Telefone";
             // 
@@ -79,11 +81,15 @@ namespace novodenovo
             this.dgvCliente.AllowUserToDeleteRows = false;
             this.dgvCliente.AllowUserToOrderColumns = true;
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCliente.Location = new System.Drawing.Point(12, 12);
+            this.dgvCliente.Location = new System.Drawing.Point(16, 15);
+            this.dgvCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.ReadOnly = true;
-            this.dgvCliente.Size = new System.Drawing.Size(470, 215);
+            this.dgvCliente.RowHeadersWidth = 51;
+            this.dgvCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCliente.Size = new System.Drawing.Size(627, 265);
             this.dgvCliente.TabIndex = 24;
+            this.dgvCliente.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellDoubleClick);
             // 
             // panelCadastro
             // 
@@ -94,17 +100,19 @@ namespace novodenovo
             this.panelCadastro.Controls.Add(this.label1);
             this.panelCadastro.Controls.Add(this.tb_nome);
             this.panelCadastro.Controls.Add(this.label2);
-            this.panelCadastro.Location = new System.Drawing.Point(90, 54);
+            this.panelCadastro.Location = new System.Drawing.Point(120, 66);
+            this.panelCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelCadastro.Name = "panelCadastro";
-            this.panelCadastro.Size = new System.Drawing.Size(306, 118);
+            this.panelCadastro.Size = new System.Drawing.Size(408, 145);
             this.panelCadastro.TabIndex = 25;
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Location = new System.Drawing.Point(198, 75);
+            this.buttonCancelar.Location = new System.Drawing.Point(264, 92);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(95, 29);
+            this.buttonCancelar.Size = new System.Drawing.Size(127, 36);
             this.buttonCancelar.TabIndex = 30;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
@@ -113,9 +121,10 @@ namespace novodenovo
             // buttonGravar
             // 
             this.buttonGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGravar.Location = new System.Drawing.Point(102, 75);
+            this.buttonGravar.Location = new System.Drawing.Point(136, 92);
+            this.buttonGravar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonGravar.Name = "buttonGravar";
-            this.buttonGravar.Size = new System.Drawing.Size(95, 29);
+            this.buttonGravar.Size = new System.Drawing.Size(127, 36);
             this.buttonGravar.TabIndex = 29;
             this.buttonGravar.Text = "Gravar";
             this.buttonGravar.UseVisualStyleBackColor = true;
@@ -123,11 +132,12 @@ namespace novodenovo
             // 
             // masked_tb_telefone
             // 
-            this.masked_tb_telefone.Location = new System.Drawing.Point(190, 49);
-            this.masked_tb_telefone.Mask = "(##) # ####-###";
+            this.masked_tb_telefone.Location = new System.Drawing.Point(253, 60);
+            this.masked_tb_telefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.masked_tb_telefone.Mask = "(##) # ####-####";
             this.masked_tb_telefone.Name = "masked_tb_telefone";
             this.masked_tb_telefone.PromptChar = ' ';
-            this.masked_tb_telefone.Size = new System.Drawing.Size(103, 20);
+            this.masked_tb_telefone.Size = new System.Drawing.Size(136, 22);
             this.masked_tb_telefone.TabIndex = 3;
             // 
             // label3
@@ -137,17 +147,19 @@ namespace novodenovo
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(306, 21);
+            this.label3.Size = new System.Drawing.Size(408, 26);
             this.label3.TabIndex = 0;
             this.label3.Text = "Cliente";
             // 
             // buttonFiltrar
             // 
             this.buttonFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFiltrar.Location = new System.Drawing.Point(291, 231);
+            this.buttonFiltrar.Location = new System.Drawing.Point(388, 284);
+            this.buttonFiltrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonFiltrar.Name = "buttonFiltrar";
-            this.buttonFiltrar.Size = new System.Drawing.Size(95, 29);
+            this.buttonFiltrar.Size = new System.Drawing.Size(127, 36);
             this.buttonFiltrar.TabIndex = 26;
             this.buttonFiltrar.Text = "Filtrar";
             this.buttonFiltrar.UseVisualStyleBackColor = true;
@@ -156,9 +168,10 @@ namespace novodenovo
             // buttonNovo
             // 
             this.buttonNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNovo.Location = new System.Drawing.Point(99, 231);
+            this.buttonNovo.Location = new System.Drawing.Point(253, 284);
+            this.buttonNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonNovo.Name = "buttonNovo";
-            this.buttonNovo.Size = new System.Drawing.Size(95, 29);
+            this.buttonNovo.Size = new System.Drawing.Size(127, 36);
             this.buttonNovo.TabIndex = 27;
             this.buttonNovo.Text = "Novo";
             this.buttonNovo.UseVisualStyleBackColor = true;
@@ -167,36 +180,26 @@ namespace novodenovo
             // buttonSair
             // 
             this.buttonSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSair.Location = new System.Drawing.Point(387, 231);
+            this.buttonSair.Location = new System.Drawing.Point(516, 284);
+            this.buttonSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSair.Name = "buttonSair";
-            this.buttonSair.Size = new System.Drawing.Size(95, 29);
+            this.buttonSair.Size = new System.Drawing.Size(127, 36);
             this.buttonSair.TabIndex = 28;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = true;
             this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
-            // buttonEditar
-            // 
-            this.buttonEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditar.Location = new System.Drawing.Point(195, 231);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(95, 29);
-            this.buttonEditar.TabIndex = 29;
-            this.buttonEditar.Text = "Editar";
-            this.buttonEditar.UseVisualStyleBackColor = true;
-            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
-            // 
             // FormCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 271);
-            this.Controls.Add(this.buttonEditar);
+            this.ClientSize = new System.Drawing.Size(653, 334);
             this.Controls.Add(this.buttonSair);
             this.Controls.Add(this.buttonNovo);
             this.Controls.Add(this.buttonFiltrar);
             this.Controls.Add(this.panelCadastro);
             this.Controls.Add(this.dgvCliente);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormCliente";
             this.Text = "Clientes cadastrados";
             this.Load += new System.EventHandler(this.FormCliente_Load);
@@ -218,7 +221,6 @@ namespace novodenovo
         private System.Windows.Forms.Button buttonFiltrar;
         private System.Windows.Forms.Button buttonNovo;
         private System.Windows.Forms.Button buttonSair;
-        private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.MaskedTextBox masked_tb_telefone;
         private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Button buttonGravar;
