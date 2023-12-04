@@ -18,11 +18,11 @@ namespace novodenovo
             InitializeComponent();
             cboPeca();
         }
-        MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=mjbezerra");
+        MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
 
         private void CarregarDadosBanco()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
 
@@ -103,7 +103,7 @@ namespace novodenovo
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand ("select nome from tb_cliente where telefone='" + masked_telefone.Text + "';", conexaoMYSQL);

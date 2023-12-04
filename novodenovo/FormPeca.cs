@@ -27,7 +27,7 @@ namespace novodenovo
 
         private void CarregarDadosBanco()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
             MySqlConnection conexaoMySql = new MySqlConnection(conexao);
             conexaoMySql.Open();
 
@@ -47,7 +47,7 @@ namespace novodenovo
             }
             else
             {
-                MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=mjbezerra");
+                MySqlConnection meuSql = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
                 meuSql.Open();
                 MySqlCommand comando = new MySqlCommand("INSERT INTO tb_peca(nomepeca) values('" + tb_nomePeca.Text + "');", meuSql);
                 comando.ExecuteNonQuery();
@@ -72,7 +72,7 @@ namespace novodenovo
         {
         
 
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
             MySqlConnection conexaoMySql = new MySqlConnection(conexao);
             conexaoMySql.Open();
 
