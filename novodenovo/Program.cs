@@ -8,6 +8,7 @@ namespace novodenovo
 {
     static class Program
     {
+        public static string conexaoBD = "server=localhost;database=novodenovo;uid=root;pwd=etec";
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>

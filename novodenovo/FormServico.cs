@@ -50,8 +50,7 @@ namespace novodenovo
 
         private void CarregarDadosBanco()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexaoBD);
             conexaoMYSQL.Open();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter("select * from tb_servico", conexaoMYSQL);
@@ -67,8 +66,7 @@ namespace novodenovo
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
-            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexaoBD);
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand("update tb_servico set nomeservico='" + tb_nomeEdit.Text + "' where id=" + tb_id.Text, conexaoMYSQL);
             comando.ExecuteNonQuery();

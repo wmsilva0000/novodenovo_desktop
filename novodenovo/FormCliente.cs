@@ -16,8 +16,7 @@ namespace novodenovo
  
         private void MostraDados()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexaoBD);
             conexaoMYSQL.Open();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter("select * from tb_cliente", conexaoMYSQL);
@@ -70,7 +69,7 @@ namespace novodenovo
             }
             else
             {
-                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexaoBD);
                 conexaoMYSQL.Open();
                 MySqlCommand comando = new MySqlCommand("INSERT INTO tb_cliente(nome, telefone) values('" + tb_nome.Text + "','" + masked_tb_telefone.Text + "');", conexaoMYSQL);
                 comando.ExecuteNonQuery();

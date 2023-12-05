@@ -18,12 +18,11 @@ namespace novodenovo
             InitializeComponent();
             cboPeca();
         }
-        MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+        MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexaoBD);
 
         private void CarregarDadosBanco()
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+            MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexaoBD);
             conexaoMYSQL.Open();
 
             MySqlDataAdapter adapter = new MySqlDataAdapter("select * from tb_servico", conexaoMYSQL);
@@ -117,7 +116,7 @@ namespace novodenovo
             string tel = masked_telefone.Text;
 
             // Cria a conexão com o banco de dados
-            using (MySqlConnection conexao = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec"))
+            using (MySqlConnection conexao = new MySqlConnection(Program.conexaoBD))
             {
                 try
                 {
