@@ -114,12 +114,47 @@ namespace novodenovo
         
         private void button1_Click(object sender, EventArgs e)
         {
+            string tel = masked_telefone.Text;
 
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
-            conexaoMYSQL.Open();
-            MySqlCommand comando = new MySqlCommand ("select nome from tb_cliente where telefone='" + masked_telefone.Text + "';", conexaoMYSQL);
-            comando.ExecuteNonQuery();
+            // Cria a conexão com o banco de dados
+            using (MySqlConnection conexao = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec"))
+            {
+                try
+                {
+                    // Abre a conexão
+                    conexao.Open();
+
+                    // Cria um comando SQL para buscar o nome do cliente associado ao CPF
+                    string consulta = "SELECT nome FROM tb_cliente WHERE telefone = @tel";
+
+                    // Cria um comando com a consulta SQL e a conexão
+                    MySqlCommand comando = new MySqlCommand(consulta, conexao);
+
+                    // Adiciona o parâmetro @cpf com o valor do texto inserido na textBox
+                    comando.Parameters.AddWithValue("@tel", tel);
+
+                    // Executa o comando e obtém o resultado
+                    object resultado = comando.ExecuteScalar();
+
+                    // Verifica se encontrou um resultado
+                    if (resultado != null)
+                    {
+                        // Exibe o resultado na outra textBox
+                        TbNome.Text = resultado.ToString();
+                    }
+                    else
+                    {
+                        // Caso não encontre, exibe uma mensagem
+                        MessageBox.Show("telefone não encontrado.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Em caso de erro, exibe a mensagem de erro
+                    MessageBox.Show("Erro ao consultar o banco de dados: " + ex.Message);
+                }
+            }
+           
          
         }
 
