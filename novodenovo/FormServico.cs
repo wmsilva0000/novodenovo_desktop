@@ -67,7 +67,7 @@ namespace novodenovo
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=mjbezerra";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand("update tb_servico set nomeservico='" + tb_nomeEdit.Text + "' where id=" + tb_id.Text, conexaoMYSQL);
