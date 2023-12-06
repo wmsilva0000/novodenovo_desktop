@@ -123,5 +123,10 @@ namespace novodenovo
         {
 
         }
+
+        private void Tela_pedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

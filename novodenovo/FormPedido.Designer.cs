@@ -409,6 +409,7 @@ namespace novodenovo
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Tela_pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Tela_pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qtd)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
