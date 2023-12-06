@@ -72,97 +72,54 @@ namespace novodenovo
 
            
         }
-        /*
-        private void CarregarDadoBanco()
-        {
-            string conexao = "server=localhost;database=novodenovo;uid=root;pwd=etec";
-            MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
-            conexaoMYSQL.Open();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from tb_cliente", conexaoMYSQL);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            dgvPedido.DataSource = dt;
-        }
-        */
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-    
 
         private void btn_confirmar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Pedido registrado com sucesso!");
         }
 
-        private void btn_servico_Click(object sender, EventArgs e)
-        {
-            FormServico telaServico = new FormServico();
-            telaServico.Show();
-            this.Visible = false;
-        }
-
-        private void btn_peca_Click(object sender, EventArgs e)
-        {
-            FormPeca telaPeca = new FormPeca();
-            telaPeca.Show();
-            this.Visible = false;
-        }
-        
         private void button1_Click(object sender, EventArgs e)
         {
             string tel = masked_telefone.Text;
 
-            // Cria a conexão com o banco de dados
             using (MySqlConnection conexao = new MySqlConnection(Program.conexaoBD))
             {
                 try
                 {
-                    // Abre a conexão
                     conexao.Open();
 
-                    // Cria um comando SQL para buscar o nome do cliente associado ao CPF
                     string consulta = "SELECT nome FROM tb_cliente WHERE telefone = @tel";
 
-                    // Cria um comando com a consulta SQL e a conexão
                     MySqlCommand comando = new MySqlCommand(consulta, conexao);
 
-                    // Adiciona o parâmetro @cpf com o valor do texto inserido na textBox
                     comando.Parameters.AddWithValue("@tel", tel);
 
                     // Executa o comando e obtém o resultado
                     object resultado = comando.ExecuteScalar();
 
-                    // Verifica se encontrou um resultado
                     if (resultado != null)
                     {
-                        // Exibe o resultado na outra textBox
+                        //Exibe o resultado na outre textbox
                         TbNome.Text = resultado.ToString();
                     }
                     else
                     {
-                        // Caso não encontre, exibe uma mensagem
                         MessageBox.Show("telefone não encontrado.");
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Em caso de erro, exibe a mensagem de erro
                     MessageBox.Show("Erro ao consultar o banco de dados: " + ex.Message);
                 }
             }
-           
-         
         }
 
-        private void Tela_pedido_Load(object sender, EventArgs e)
+        private void btnNovoServico_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
         }
