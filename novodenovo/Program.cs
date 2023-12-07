@@ -8,7 +8,7 @@ namespace novodenovo
 {
     static class Program
     {
-        public static string conexaoBD = "server=localhost;database=novodenovo;uid=root;pwd=etec";
+        public static string conexaoBD = "server=localhost;database=novodenovo;uid=root;pwd=Sccp1910.";
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
@@ -17,7 +17,7 @@ namespace novodenovo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MDIMenu());
+            Application.Run(new FormLogin());
         }
     }
 }

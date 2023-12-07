@@ -23,7 +23,7 @@ namespace novodenovo
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dgvCliente.DataSource = dt;
-
+            //Função para carregar dados do Banco
 
 
         }

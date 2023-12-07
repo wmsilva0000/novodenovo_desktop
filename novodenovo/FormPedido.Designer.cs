@@ -380,6 +380,7 @@ namespace novodenovo
             this.Controls.Add(this.btn_confirmar);
             this.Name = "Tela_pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Tela_pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qtd)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

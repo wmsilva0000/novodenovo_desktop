@@ -15,6 +15,7 @@ namespace novodenovo
     {
         private MySqlCommand command;
         private MySqlConnection connection;
+
         public Tela_pedido()
         {
             InitializeComponent();
@@ -191,6 +192,11 @@ namespace novodenovo
             dgvPedido.Rows.Add(masked_telefone.Text, TbNome.Text, qtd.Text, cbPeca.Text, cbCor.Text, cbServico.Text, tbValor.Text, tbValorFinal.Text,
             dtEntrega.Text, tbDescricao.Text);
             LimparCamposServico();
+        }
+
+        private void Tela_pedido_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

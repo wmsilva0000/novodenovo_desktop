@@ -26,7 +26,7 @@ namespace novodenovo
             }
             else 
             {
-                MySqlConnection conexaoMYSQL = new MySqlConnection("server=localhost;database=novodenovo;uid=root;pwd=etec");
+                MySqlConnection conexaoMYSQL = new MySqlConnection(Program.conexaoBD);
                 conexaoMYSQL.Open();
                 MySqlCommand comando = new MySqlCommand("INSERT INTO tb_servico(nomeservico) values('" + tb_nomeServ.Text +"');", conexaoMYSQL);
                 comando.ExecuteNonQuery();
