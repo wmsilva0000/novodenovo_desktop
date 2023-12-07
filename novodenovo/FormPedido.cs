@@ -13,6 +13,8 @@ namespace novodenovo
 {
     public partial class Tela_pedido : Form
     {
+        private MySqlCommand command;
+        private MySqlConnection connection;
         public Tela_pedido()
         {
             InitializeComponent();
@@ -29,6 +31,8 @@ namespace novodenovo
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dgvPedido.DataSource = dt;
+            command = new MySqlCommand();
+            command.Connection = connection;
         }
         void cboPeca()
         {
@@ -76,7 +80,65 @@ namespace novodenovo
         private void btn_confirmar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Pedido registrado com sucesso!");
+
+            // Adicionar lógica para confirmar pedido
+            // Exemplo: Inserir dados no banco de dados
+
+            conexaoMYSQL.Open();
+
+            // Inserir dados do pedido na tabela tb_pedido
+            string queryPedido = "INSERT INTO tb_pedido (id, data_registro) VALUES (@idPedido, @data_registro);";
+            command.CommandText = queryPedido;
+        //    command.Parameters.AddWithValue("@id_cliente", Convert.ToInt32(txtClienteId.Text));
+            command.Parameters.AddWithValue("@data_registro", DateTime.Now);
+            command.ExecuteNonQuery();
+            command.Parameters.Clear();
+
+            // Obter o último ID de pedido inserido
+            command.CommandText = "SELECT @@IDENTITY";
+            int pedidoId = Convert.ToInt32(command.ExecuteScalar());
+
+            // Inserir dados dos serviços na tabela tb_pedido_servico
+            foreach (DataGridViewRow row in dgvPedido.Rows)
+            {
+                string queryServico = "INSERT INTO tb_pedido_itens (id_pedido, descricao, valor_servico, quantidade, data_entrega, cor) " +
+                "VALUES (@idPedido, @descricao, @valor_servico, @quantidade, @data_entrega, @cor);";
+                command.CommandText = queryServico;
+                command.Parameters.AddWithValue("@id_pedido", pedidoId);
+                command.Parameters.AddWithValue("@descricao", row.Cells["Descricao"].Value.ToString());
+                command.Parameters.AddWithValue("@valor_servico", Convert.ToDecimal(row.Cells["Preco"].Value));
+                command.Parameters.AddWithValue("@quantidade", Convert.ToDecimal(row.Cells["Quantidade"].Value));
+                command.Parameters.AddWithValue("@ data_entrega", row.Cells["Data de Entrega"].Value.ToString());
+                command.Parameters.AddWithValue("@cor", row.Cells["cor"].Value.ToString());
+                command.ExecuteNonQuery();
+                command.Parameters.Clear();
+            }
+
+            conexaoMYSQL.Close();
+
+            MessageBox.Show("Pedido confirmado com sucesso!");
+            LimparCamposPedido();
         }
+
+        private void LimparCamposServico()
+        {
+            // Adicionar lógica para limpar campos de serviço
+            // Exemplo: Limpar TextBoxes
+
+            tbDescricao.Clear();
+            tbValor.Clear();
+        }
+
+        private void LimparCamposPedido()
+        {
+            // Adicionar lógica para limpar campos do pedido
+            // Exemplo: Limpar TextBoxes relacionados ao pedido
+
+         //   txtClienteId.Clear();
+            dgvPedido.Rows.Clear();
+        }
+    
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -122,6 +184,13 @@ namespace novodenovo
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNovoServ(object sender, EventArgs e)
+        {
+            dgvPedido.Rows.Add(masked_telefone.Text, TbNome.Text, qtd.Text, cbPeca.Text, cbCor.Text, cbServico.Text, tbValor.Text, tbValorFinal.Text,
+            dtEntrega.Text, tbDescricao.Text);
+            LimparCamposServico();
         }
     }
 }
