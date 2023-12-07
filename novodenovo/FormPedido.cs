@@ -15,7 +15,6 @@ namespace novodenovo
     {
         private MySqlCommand command;
         private MySqlConnection connection;
-
         public Tela_pedido()
         {
             InitializeComponent();
@@ -112,7 +111,7 @@ namespace novodenovo
                 command.Parameters.AddWithValue("@ data_entrega", row.Cells["Data de Entrega"].Value.ToString());
                 command.Parameters.AddWithValue("@cor", row.Cells["cor"].Value.ToString());
                 command.ExecuteNonQuery();
-                command.Parameters.Clear();
+                command.Parameters.Clear(); 
             }
 
             conexaoMYSQL.Close();
@@ -187,6 +186,7 @@ namespace novodenovo
 
         }
 
+
         private void btnNovoServ(object sender, EventArgs e)
         {
             dgvPedido.Rows.Add(masked_telefone.Text, TbNome.Text, qtd.Text, cbPeca.Text, cbCor.Text, cbServico.Text, tbValor.Text, tbValorFinal.Text,
@@ -196,6 +196,7 @@ namespace novodenovo
 
         private void Tela_pedido_Load(object sender, EventArgs e)
         {
+
 
         }
     }
