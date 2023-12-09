@@ -39,7 +39,6 @@ namespace novodenovo
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_servico = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_peca = new System.Windows.Forms.ToolStripMenuItem();
-            this.faturamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,8 +49,7 @@ namespace novodenovo
             this.pedidosToolStripMenuItem,
             this.pendênciasToolStripMenuItem,
             this.históricoToolStripMenuItem,
-            this.serviçosToolStripMenuItem,
-            this.faturamentoToolStripMenuItem});
+            this.serviçosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(843, 28);
@@ -76,6 +74,7 @@ namespace novodenovo
             this.históricoToolStripMenuItem.Name = "históricoToolStripMenuItem";
             this.históricoToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.históricoToolStripMenuItem.Text = "Histórico";
+            this.históricoToolStripMenuItem.Click += new System.EventHandler(this.históricoToolStripMenuItem_Click);
             // 
             // serviçosToolStripMenuItem
             // 
@@ -90,29 +89,23 @@ namespace novodenovo
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.btn_cliente_Click);
             // 
             // btn_servico
             // 
             this.btn_servico.Name = "btn_servico";
-            this.btn_servico.Size = new System.Drawing.Size(224, 26);
+            this.btn_servico.Size = new System.Drawing.Size(140, 26);
             this.btn_servico.Text = "Serviço";
             this.btn_servico.Click += new System.EventHandler(this.btn_servico_Click);
             // 
             // btn_peca
             // 
             this.btn_peca.Name = "btn_peca";
-            this.btn_peca.Size = new System.Drawing.Size(224, 26);
+            this.btn_peca.Size = new System.Drawing.Size(140, 26);
             this.btn_peca.Text = "Peça";
             this.btn_peca.Click += new System.EventHandler(this.btn_peca_Click);
-            // 
-            // faturamentoToolStripMenuItem
-            // 
-            this.faturamentoToolStripMenuItem.Name = "faturamentoToolStripMenuItem";
-            this.faturamentoToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
-            this.faturamentoToolStripMenuItem.Text = "Faturamento";
             // 
             // MDIMenu
             // 
@@ -121,7 +114,7 @@ namespace novodenovo
             this.ClientSize = new System.Drawing.Size(843, 558);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MDIMenu";
             this.Text = "MDIMenu";
             this.Load += new System.EventHandler(this.MDIMenu_Load);
@@ -139,7 +132,6 @@ namespace novodenovo
         private System.Windows.Forms.ToolStripMenuItem serviçosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btn_servico;
         private System.Windows.Forms.ToolStripMenuItem btn_peca;
-        private System.Windows.Forms.ToolStripMenuItem faturamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
     }

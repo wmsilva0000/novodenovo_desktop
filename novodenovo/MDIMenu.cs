@@ -61,5 +61,12 @@ namespace novodenovo
             telaCliente.Show();
             this.Visible = false;
         }
+
+        private void históricoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHistorico telaHistorico = new FormHistorico();
+            telaHistorico.Show();
+            this.Visible = false;
+        }
     }
 }
