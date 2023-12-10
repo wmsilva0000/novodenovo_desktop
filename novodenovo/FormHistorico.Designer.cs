@@ -38,6 +38,7 @@ namespace novodenovo
             this.dgvHistorico = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.tbFaturamento = new System.Windows.Forms.TextBox();
+            this.btnSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorico)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,7 +105,7 @@ namespace novodenovo
             this.dgvHistorico.ReadOnly = true;
             this.dgvHistorico.RowHeadersWidth = 51;
             this.dgvHistorico.RowTemplate.Height = 24;
-            this.dgvHistorico.Size = new System.Drawing.Size(859, 445);
+            this.dgvHistorico.Size = new System.Drawing.Size(859, 386);
             this.dgvHistorico.TabIndex = 6;
             // 
             // label4
@@ -125,11 +126,22 @@ namespace novodenovo
             this.tbFaturamento.Size = new System.Drawing.Size(100, 22);
             this.tbFaturamento.TabIndex = 8;
             // 
+            // btnSair
+            // 
+            this.btnSair.Location = new System.Drawing.Point(781, 478);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(75, 27);
+            this.btnSair.TabIndex = 9;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // FormHistorico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 527);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.tbFaturamento);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvHistorico);
@@ -140,7 +152,8 @@ namespace novodenovo
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBuscar);
             this.Name = "FormHistorico";
-            this.Text = "FormHisstorico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Histórico";
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,5 +171,6 @@ namespace novodenovo
         private System.Windows.Forms.DataGridView dgvHistorico;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbFaturamento;
+        private System.Windows.Forms.Button btnSair;
     }
 }

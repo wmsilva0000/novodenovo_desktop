@@ -68,6 +68,7 @@ namespace novodenovo
             this.pendênciasToolStripMenuItem.Name = "pendênciasToolStripMenuItem";
             this.pendênciasToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.pendênciasToolStripMenuItem.Text = "Pendências";
+            this.pendênciasToolStripMenuItem.Click += new System.EventHandler(this.pendênciasToolStripMenuItem_Click);
             // 
             // históricoToolStripMenuItem
             // 

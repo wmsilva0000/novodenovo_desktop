@@ -68,5 +68,12 @@ namespace novodenovo
             telaHistorico.Show();
             this.Visible = false;
         }
+
+        private void pendênciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPendencias telaPendencias = new FormPendencias();
+            telaPendencias.Show();
+            this.Visible = false;
+        }
     }
 }

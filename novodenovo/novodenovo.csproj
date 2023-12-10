@@ -141,6 +141,12 @@
     <Compile Include="FormPedido.Designer.cs">
       <DependentUpon>FormPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPendencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPendencias.Designer.cs">
+      <DependentUpon>FormPendencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPedido.resx">
       <DependentUpon>FormPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPendencias.resx">
+      <DependentUpon>FormPendencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormServico.resx">
       <DependentUpon>FormServico.cs</DependentUpon>

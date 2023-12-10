@@ -56,7 +56,7 @@ namespace novodenovo
             // 
             this.btn_sairPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sairPeca.Location = new System.Drawing.Point(531, 283);
-            this.btn_sairPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_sairPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sairPeca.Name = "btn_sairPeca";
             this.btn_sairPeca.Size = new System.Drawing.Size(127, 36);
             this.btn_sairPeca.TabIndex = 34;
@@ -68,7 +68,7 @@ namespace novodenovo
             // 
             this.btn_filtPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_filtPeca.Location = new System.Drawing.Point(396, 283);
-            this.btn_filtPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_filtPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btn_filtPeca.Name = "btn_filtPeca";
             this.btn_filtPeca.Size = new System.Drawing.Size(127, 36);
             this.btn_filtPeca.TabIndex = 32;
@@ -83,7 +83,7 @@ namespace novodenovo
             this.panel_cadPeca.Controls.Add(this.label1);
             this.panel_cadPeca.Controls.Add(this.tb_nomePeca);
             this.panel_cadPeca.Location = new System.Drawing.Point(197, 66);
-            this.panel_cadPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_cadPeca.Margin = new System.Windows.Forms.Padding(4);
             this.panel_cadPeca.Name = "panel_cadPeca";
             this.panel_cadPeca.Size = new System.Drawing.Size(304, 145);
             this.panel_cadPeca.TabIndex = 31;
@@ -92,7 +92,7 @@ namespace novodenovo
             // 
             this.btnCancelarPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarPeca.Location = new System.Drawing.Point(171, 91);
-            this.btnCancelarPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelarPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarPeca.Name = "btnCancelarPeca";
             this.btnCancelarPeca.Size = new System.Drawing.Size(117, 36);
             this.btnCancelarPeca.TabIndex = 36;
@@ -104,7 +104,7 @@ namespace novodenovo
             // 
             this.btn_gravPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_gravPeca.Location = new System.Drawing.Point(60, 91);
-            this.btn_gravPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_gravPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btn_gravPeca.Name = "btn_gravPeca";
             this.btn_gravPeca.Size = new System.Drawing.Size(103, 36);
             this.btn_gravPeca.TabIndex = 29;
@@ -139,7 +139,7 @@ namespace novodenovo
             // tb_nomePeca
             // 
             this.tb_nomePeca.Location = new System.Drawing.Point(20, 59);
-            this.tb_nomePeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_nomePeca.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nomePeca.Name = "tb_nomePeca";
             this.tb_nomePeca.Size = new System.Drawing.Size(267, 22);
             this.tb_nomePeca.TabIndex = 1;
@@ -151,7 +151,7 @@ namespace novodenovo
             this.dgvPeca.AllowUserToOrderColumns = true;
             this.dgvPeca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPeca.Location = new System.Drawing.Point(24, 14);
-            this.dgvPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPeca.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPeca.Name = "dgvPeca";
             this.dgvPeca.ReadOnly = true;
             this.dgvPeca.RowHeadersWidth = 51;
@@ -164,7 +164,7 @@ namespace novodenovo
             // 
             this.btnNovoPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovoPeca.Location = new System.Drawing.Point(261, 283);
-            this.btnNovoPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovoPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovoPeca.Name = "btnNovoPeca";
             this.btnNovoPeca.Size = new System.Drawing.Size(127, 36);
             this.btnNovoPeca.TabIndex = 36;
@@ -182,7 +182,7 @@ namespace novodenovo
             this.panel_edit.Controls.Add(this.label4);
             this.panel_edit.Controls.Add(this.tb_nomepecaEdit);
             this.panel_edit.Location = new System.Drawing.Point(197, 42);
-            this.panel_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_edit.Margin = new System.Windows.Forms.Padding(4);
             this.panel_edit.Name = "panel_edit";
             this.panel_edit.Size = new System.Drawing.Size(304, 194);
             this.panel_edit.TabIndex = 37;
@@ -202,7 +202,7 @@ namespace novodenovo
             // 
             this.tb_idpeca.Enabled = false;
             this.tb_idpeca.Location = new System.Drawing.Point(21, 54);
-            this.tb_idpeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_idpeca.Margin = new System.Windows.Forms.Padding(4);
             this.tb_idpeca.Name = "tb_idpeca";
             this.tb_idpeca.ReadOnly = true;
             this.tb_idpeca.Size = new System.Drawing.Size(267, 22);
@@ -212,7 +212,7 @@ namespace novodenovo
             // 
             this.btn_canc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_canc.Location = new System.Drawing.Point(172, 137);
-            this.btn_canc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_canc.Margin = new System.Windows.Forms.Padding(4);
             this.btn_canc.Name = "btn_canc";
             this.btn_canc.Size = new System.Drawing.Size(117, 36);
             this.btn_canc.TabIndex = 36;
@@ -224,7 +224,7 @@ namespace novodenovo
             // 
             this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Edit.Location = new System.Drawing.Point(61, 137);
-            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(103, 36);
             this.btn_Edit.TabIndex = 29;
@@ -259,7 +259,7 @@ namespace novodenovo
             // tb_nomepecaEdit
             // 
             this.tb_nomepecaEdit.Location = new System.Drawing.Point(21, 105);
-            this.tb_nomepecaEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_nomepecaEdit.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nomepecaEdit.Name = "tb_nomepecaEdit";
             this.tb_nomepecaEdit.Size = new System.Drawing.Size(267, 22);
             this.tb_nomepecaEdit.TabIndex = 1;
@@ -275,9 +275,10 @@ namespace novodenovo
             this.Controls.Add(this.btn_filtPeca);
             this.Controls.Add(this.panel_cadPeca);
             this.Controls.Add(this.dgvPeca);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPeca";
-            this.Text = "FormPeca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Peças Cadastradas";
             this.Load += new System.EventHandler(this.FormPeca_Load);
             this.panel_cadPeca.ResumeLayout(false);
             this.panel_cadPeca.PerformLayout();

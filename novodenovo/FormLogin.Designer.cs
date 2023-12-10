@@ -41,9 +41,10 @@ namespace novodenovo
             // 
             // btn_entrar
             // 
-            this.btn_entrar.Location = new System.Drawing.Point(168, 390);
+            this.btn_entrar.Location = new System.Drawing.Point(224, 480);
+            this.btn_entrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_entrar.Name = "btn_entrar";
-            this.btn_entrar.Size = new System.Drawing.Size(144, 42);
+            this.btn_entrar.Size = new System.Drawing.Size(192, 52);
             this.btn_entrar.TabIndex = 0;
             this.btn_entrar.Text = "ENTRAR";
             this.btn_entrar.UseVisualStyleBackColor = true;
@@ -52,60 +53,68 @@ namespace novodenovo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(165, 247);
+            this.label1.Location = new System.Drawing.Point(220, 304);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuário";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(165, 318);
+            this.label2.Location = new System.Drawing.Point(220, 391);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(49, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Senha";
             // 
             // tb_senha
             // 
-            this.tb_senha.Location = new System.Drawing.Point(168, 344);
+            this.tb_senha.Location = new System.Drawing.Point(224, 423);
+            this.tb_senha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_senha.Name = "tb_senha";
-            this.tb_senha.Size = new System.Drawing.Size(144, 20);
+            this.tb_senha.Size = new System.Drawing.Size(191, 22);
             this.tb_senha.TabIndex = 3;
             this.tb_senha.UseSystemPasswordChar = true;
             // 
             // tb_usuario
             // 
-            this.tb_usuario.Location = new System.Drawing.Point(168, 273);
+            this.tb_usuario.Location = new System.Drawing.Point(224, 336);
+            this.tb_usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_usuario.Name = "tb_usuario";
-            this.tb_usuario.Size = new System.Drawing.Size(144, 20);
+            this.tb_usuario.Size = new System.Drawing.Size(191, 22);
             this.tb_usuario.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(80, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(107, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(335, 240);
+            this.pictureBox1.Size = new System.Drawing.Size(447, 295);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(486, 474);
+            this.ClientSize = new System.Drawing.Size(648, 583);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tb_usuario);
             this.Controls.Add(this.tb_senha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_entrar);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLogin";
-            this.Text = "Tela Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

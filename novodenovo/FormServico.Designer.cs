@@ -56,7 +56,7 @@ namespace novodenovo
             // 
             this.btn_sairServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sairServ.Location = new System.Drawing.Point(513, 283);
-            this.btn_sairServ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_sairServ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sairServ.Name = "btn_sairServ";
             this.btn_sairServ.Size = new System.Drawing.Size(127, 36);
             this.btn_sairServ.TabIndex = 40;
@@ -68,7 +68,7 @@ namespace novodenovo
             // 
             this.btn_novoServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_novoServ.Location = new System.Drawing.Point(250, 283);
-            this.btn_novoServ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_novoServ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_novoServ.Name = "btn_novoServ";
             this.btn_novoServ.Size = new System.Drawing.Size(127, 36);
             this.btn_novoServ.TabIndex = 39;
@@ -80,7 +80,7 @@ namespace novodenovo
             // 
             this.btn_filtServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_filtServ.Location = new System.Drawing.Point(385, 283);
-            this.btn_filtServ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_filtServ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_filtServ.Name = "btn_filtServ";
             this.btn_filtServ.Size = new System.Drawing.Size(127, 36);
             this.btn_filtServ.TabIndex = 38;
@@ -95,7 +95,7 @@ namespace novodenovo
             this.panel_cadServ.Controls.Add(this.label1);
             this.panel_cadServ.Controls.Add(this.tb_nomeServ);
             this.panel_cadServ.Location = new System.Drawing.Point(133, 66);
-            this.panel_cadServ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_cadServ.Margin = new System.Windows.Forms.Padding(4);
             this.panel_cadServ.Name = "panel_cadServ";
             this.panel_cadServ.Size = new System.Drawing.Size(360, 148);
             this.panel_cadServ.TabIndex = 37;
@@ -104,7 +104,7 @@ namespace novodenovo
             // 
             this.btn_cancServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancServ.Location = new System.Drawing.Point(228, 94);
-            this.btn_cancServ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancServ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancServ.Name = "btn_cancServ";
             this.btn_cancServ.Size = new System.Drawing.Size(117, 36);
             this.btn_cancServ.TabIndex = 30;
@@ -116,7 +116,7 @@ namespace novodenovo
             // 
             this.btn_gravServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_gravServ.Location = new System.Drawing.Point(117, 94);
-            this.btn_gravServ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_gravServ.Margin = new System.Windows.Forms.Padding(4);
             this.btn_gravServ.Name = "btn_gravServ";
             this.btn_gravServ.Size = new System.Drawing.Size(103, 36);
             this.btn_gravServ.TabIndex = 29;
@@ -151,7 +151,7 @@ namespace novodenovo
             // tb_nomeServ
             // 
             this.tb_nomeServ.Location = new System.Drawing.Point(17, 62);
-            this.tb_nomeServ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_nomeServ.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nomeServ.Name = "tb_nomeServ";
             this.tb_nomeServ.Size = new System.Drawing.Size(321, 22);
             this.tb_nomeServ.TabIndex = 1;
@@ -163,7 +163,7 @@ namespace novodenovo
             this.dgvServico.AllowUserToOrderColumns = true;
             this.dgvServico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServico.Location = new System.Drawing.Point(13, 14);
-            this.dgvServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvServico.Margin = new System.Windows.Forms.Padding(4);
             this.dgvServico.Name = "dgvServico";
             this.dgvServico.ReadOnly = true;
             this.dgvServico.RowHeadersWidth = 51;
@@ -182,7 +182,7 @@ namespace novodenovo
             this.panel_edit.Controls.Add(this.label4);
             this.panel_edit.Controls.Add(this.tb_nomeEdit);
             this.panel_edit.Location = new System.Drawing.Point(133, 49);
-            this.panel_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel_edit.Margin = new System.Windows.Forms.Padding(4);
             this.panel_edit.Name = "panel_edit";
             this.panel_edit.Size = new System.Drawing.Size(360, 199);
             this.panel_edit.TabIndex = 42;
@@ -202,7 +202,7 @@ namespace novodenovo
             // 
             this.tb_id.Enabled = false;
             this.tb_id.Location = new System.Drawing.Point(17, 57);
-            this.tb_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_id.Margin = new System.Windows.Forms.Padding(4);
             this.tb_id.Name = "tb_id";
             this.tb_id.ReadOnly = true;
             this.tb_id.Size = new System.Drawing.Size(321, 22);
@@ -212,7 +212,7 @@ namespace novodenovo
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar.Location = new System.Drawing.Point(223, 139);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(117, 36);
             this.btn_cancelar.TabIndex = 30;
@@ -224,7 +224,7 @@ namespace novodenovo
             // 
             this.btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_edit.Location = new System.Drawing.Point(117, 139);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(103, 36);
             this.btn_edit.TabIndex = 29;
@@ -259,7 +259,7 @@ namespace novodenovo
             // tb_nomeEdit
             // 
             this.tb_nomeEdit.Location = new System.Drawing.Point(17, 107);
-            this.tb_nomeEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_nomeEdit.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nomeEdit.Name = "tb_nomeEdit";
             this.tb_nomeEdit.Size = new System.Drawing.Size(321, 22);
             this.tb_nomeEdit.TabIndex = 1;
@@ -275,9 +275,10 @@ namespace novodenovo
             this.Controls.Add(this.btn_filtServ);
             this.Controls.Add(this.panel_cadServ);
             this.Controls.Add(this.dgvServico);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormServico";
-            this.Text = "FormServiço";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Serviços Cadastrados";
             this.Load += new System.EventHandler(this.FormServiço_Load_1);
             this.panel_cadServ.ResumeLayout(false);
             this.panel_cadServ.PerformLayout();

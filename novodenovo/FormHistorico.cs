@@ -28,5 +28,12 @@ namespace novodenovo
             adapter.Fill(dt);
             dgvHistorico.DataSource = dt;
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            MDIMenu menu = new MDIMenu();
+            menu.Show();
+            this.Visible = false;
+        }
     }
 }
