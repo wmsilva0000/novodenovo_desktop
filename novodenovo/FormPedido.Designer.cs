@@ -88,7 +88,7 @@ namespace novodenovo
             // 
             this.tbValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbValor.Location = new System.Drawing.Point(617, 57);
-            this.tbValor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbValor.Margin = new System.Windows.Forms.Padding(4);
             this.tbValor.Name = "tbValor";
             this.tbValor.Size = new System.Drawing.Size(132, 24);
             this.tbValor.TabIndex = 39;
@@ -107,7 +107,7 @@ namespace novodenovo
             // btn_confirmar
             // 
             this.btn_confirmar.Location = new System.Drawing.Point(711, 614);
-            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_confirmar.Name = "btn_confirmar";
             this.btn_confirmar.Size = new System.Drawing.Size(119, 39);
             this.btn_confirmar.TabIndex = 37;
@@ -141,7 +141,7 @@ namespace novodenovo
             // 
             this.tbDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDescricao.Location = new System.Drawing.Point(7, 103);
-            this.tbDescricao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDescricao.Margin = new System.Windows.Forms.Padding(4);
             this.tbDescricao.Multiline = true;
             this.tbDescricao.Name = "tbDescricao";
             this.tbDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -184,7 +184,7 @@ namespace novodenovo
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(213, 614);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 39);
             this.button3.TabIndex = 47;
@@ -207,7 +207,7 @@ namespace novodenovo
             this.TbNome.Enabled = false;
             this.TbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.TbNome.Location = new System.Drawing.Point(149, 55);
-            this.TbNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbNome.Margin = new System.Windows.Forms.Padding(4);
             this.TbNome.Name = "TbNome";
             this.TbNome.Size = new System.Drawing.Size(227, 24);
             this.TbNome.TabIndex = 50;
@@ -228,7 +228,7 @@ namespace novodenovo
             // 
             this.qtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qtd.Location = new System.Drawing.Point(7, 55);
-            this.qtd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.qtd.Margin = new System.Windows.Forms.Padding(4);
             this.qtd.Name = "qtd";
             this.qtd.Size = new System.Drawing.Size(79, 24);
             this.qtd.TabIndex = 54;
@@ -257,7 +257,7 @@ namespace novodenovo
             "Vermelho",
             "Vinho"});
             this.cbCor.Location = new System.Drawing.Point(268, 55);
-            this.cbCor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCor.Margin = new System.Windows.Forms.Padding(4);
             this.cbCor.Name = "cbCor";
             this.cbCor.Size = new System.Drawing.Size(165, 26);
             this.cbCor.TabIndex = 55;
@@ -267,7 +267,7 @@ namespace novodenovo
             this.cbPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPeca.FormattingEnabled = true;
             this.cbPeca.Location = new System.Drawing.Point(93, 55);
-            this.cbPeca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbPeca.Margin = new System.Windows.Forms.Padding(4);
             this.cbPeca.Name = "cbPeca";
             this.cbPeca.Size = new System.Drawing.Size(165, 26);
             this.cbPeca.TabIndex = 56;
@@ -277,7 +277,7 @@ namespace novodenovo
             this.cbServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbServico.FormattingEnabled = true;
             this.cbServico.Location = new System.Drawing.Point(443, 55);
-            this.cbServico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbServico.Margin = new System.Windows.Forms.Padding(4);
             this.cbServico.Name = "cbServico";
             this.cbServico.Size = new System.Drawing.Size(165, 26);
             this.cbServico.TabIndex = 57;
@@ -287,7 +287,7 @@ namespace novodenovo
             this.dtEntrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtEntrega.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtEntrega.Location = new System.Drawing.Point(900, 57);
-            this.dtEntrega.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtEntrega.Margin = new System.Windows.Forms.Padding(4);
             this.dtEntrega.Name = "dtEntrega";
             this.dtEntrega.Size = new System.Drawing.Size(129, 24);
             this.dtEntrega.TabIndex = 59;
@@ -303,9 +303,9 @@ namespace novodenovo
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(16, 33);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1033, 92);
             this.groupBox1.TabIndex = 61;
             this.groupBox1.TabStop = false;
@@ -314,8 +314,8 @@ namespace novodenovo
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(385, 36);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(504, 32);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 47);
             this.button1.TabIndex = 63;
@@ -327,7 +327,7 @@ namespace novodenovo
             // 
             this.masked_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.masked_telefone.Location = new System.Drawing.Point(8, 55);
-            this.masked_telefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.masked_telefone.Margin = new System.Windows.Forms.Padding(4);
             this.masked_telefone.Mask = "(##) # ####-####";
             this.masked_telefone.Name = "masked_telefone";
             this.masked_telefone.PromptChar = ' ';
@@ -339,7 +339,7 @@ namespace novodenovo
             // 
             this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPedido.Location = new System.Drawing.Point(24, 404);
-            this.dgvPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPedido.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPedido.Name = "dgvPedido";
             this.dgvPedido.RowHeadersWidth = 51;
             this.dgvPedido.Size = new System.Drawing.Size(1021, 183);
@@ -368,9 +368,9 @@ namespace novodenovo
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(17, 134);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1032, 250);
             this.groupBox2.TabIndex = 63;
             this.groupBox2.TabStop = false;
@@ -380,7 +380,7 @@ namespace novodenovo
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(8, 194);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 47);
             this.button2.TabIndex = 64;
@@ -393,7 +393,7 @@ namespace novodenovo
             this.tbValorFinal.Enabled = false;
             this.tbValorFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbValorFinal.Location = new System.Drawing.Point(759, 57);
-            this.tbValorFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbValorFinal.Margin = new System.Windows.Forms.Padding(4);
             this.tbValorFinal.Name = "tbValorFinal";
             this.tbValorFinal.Size = new System.Drawing.Size(132, 24);
             this.tbValorFinal.TabIndex = 40;
@@ -408,7 +408,7 @@ namespace novodenovo
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_confirmar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Tela_pedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";
