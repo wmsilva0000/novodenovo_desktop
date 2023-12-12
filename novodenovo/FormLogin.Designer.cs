@@ -42,7 +42,7 @@ namespace novodenovo
             // btn_entrar
             // 
             this.btn_entrar.Location = new System.Drawing.Point(224, 480);
-            this.btn_entrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_entrar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_entrar.Name = "btn_entrar";
             this.btn_entrar.Size = new System.Drawing.Size(192, 52);
             this.btn_entrar.TabIndex = 0;
@@ -73,7 +73,7 @@ namespace novodenovo
             // tb_senha
             // 
             this.tb_senha.Location = new System.Drawing.Point(224, 423);
-            this.tb_senha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_senha.Margin = new System.Windows.Forms.Padding(4);
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.Size = new System.Drawing.Size(191, 22);
             this.tb_senha.TabIndex = 3;
@@ -82,7 +82,7 @@ namespace novodenovo
             // tb_usuario
             // 
             this.tb_usuario.Location = new System.Drawing.Point(224, 336);
-            this.tb_usuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_usuario.Margin = new System.Windows.Forms.Padding(4);
             this.tb_usuario.Name = "tb_usuario";
             this.tb_usuario.Size = new System.Drawing.Size(191, 22);
             this.tb_usuario.TabIndex = 4;
@@ -91,7 +91,7 @@ namespace novodenovo
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(107, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(447, 295);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +111,7 @@ namespace novodenovo
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_entrar);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

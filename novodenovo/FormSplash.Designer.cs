@@ -34,25 +34,24 @@ namespace novodenovo
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Carregar_barra = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -5);
+            this.pictureBox1.Location = new System.Drawing.Point(-240, -96);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(812, 527);
+            this.pictureBox1.Size = new System.Drawing.Size(910, 624);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Carregar_barra
             // 
             this.Carregar_barra.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Carregar_barra.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Carregar_barra.Location = new System.Drawing.Point(33, 366);
+            this.Carregar_barra.Location = new System.Drawing.Point(41, 431);
             this.Carregar_barra.Name = "Carregar_barra";
             this.Carregar_barra.Size = new System.Drawing.Size(566, 23);
             this.Carregar_barra.TabIndex = 1;
@@ -63,20 +62,11 @@ namespace novodenovo
             this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(429, 142);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
             // FormSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 450);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(670, 508);
             this.Controls.Add(this.Carregar_barra);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -85,7 +75,6 @@ namespace novodenovo
             this.Text = "FormSplash";
             this.Load += new System.EventHandler(this.FormSplash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,6 +84,5 @@ namespace novodenovo
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ProgressBar Carregar_barra;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
