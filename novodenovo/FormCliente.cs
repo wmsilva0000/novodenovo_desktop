@@ -38,11 +38,6 @@ namespace novodenovo
             menu.Show();
         }
 
-        private void buttonFiltrar_Click(object sender, EventArgs e)
-        {
-            MostraDados();
-        }
-
         private void FormCliente_Load(object sender, EventArgs e)
         {
             panelCadastro.Hide();

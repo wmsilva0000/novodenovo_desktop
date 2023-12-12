@@ -54,7 +54,7 @@ namespace novodenovo
             // 
             // btn_sairPeca
             // 
-            this.btn_sairPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sairPeca.Font = new System.Drawing.Font("Candara", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btn_sairPeca.Location = new System.Drawing.Point(531, 283);
             this.btn_sairPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sairPeca.Name = "btn_sairPeca";
@@ -66,7 +66,7 @@ namespace novodenovo
             // 
             // btn_filtPeca
             // 
-            this.btn_filtPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_filtPeca.Font = new System.Drawing.Font("Candara", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btn_filtPeca.Location = new System.Drawing.Point(396, 283);
             this.btn_filtPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btn_filtPeca.Name = "btn_filtPeca";
@@ -90,7 +90,7 @@ namespace novodenovo
             // 
             // btnCancelarPeca
             // 
-            this.btnCancelarPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarPeca.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnCancelarPeca.Location = new System.Drawing.Point(171, 91);
             this.btnCancelarPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelarPeca.Name = "btnCancelarPeca";
@@ -102,7 +102,7 @@ namespace novodenovo
             // 
             // btn_gravPeca
             // 
-            this.btn_gravPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gravPeca.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btn_gravPeca.Location = new System.Drawing.Point(60, 91);
             this.btn_gravPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btn_gravPeca.Name = "btn_gravPeca";
@@ -116,7 +116,7 @@ namespace novodenovo
             // 
             this.label3.BackColor = System.Drawing.Color.Blue;
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -128,20 +128,21 @@ namespace novodenovo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.Location = new System.Drawing.Point(16, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 18);
+            this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
             // 
             // tb_nomePeca
             // 
+            this.tb_nomePeca.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
             this.tb_nomePeca.Location = new System.Drawing.Point(20, 59);
             this.tb_nomePeca.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nomePeca.Name = "tb_nomePeca";
-            this.tb_nomePeca.Size = new System.Drawing.Size(267, 22);
+            this.tb_nomePeca.Size = new System.Drawing.Size(267, 28);
             this.tb_nomePeca.TabIndex = 1;
             // 
             // dgvPeca
@@ -162,7 +163,7 @@ namespace novodenovo
             // 
             // btnNovoPeca
             // 
-            this.btnNovoPeca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovoPeca.Font = new System.Drawing.Font("Candara", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnNovoPeca.Location = new System.Drawing.Point(261, 283);
             this.btnNovoPeca.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovoPeca.Name = "btnNovoPeca";
@@ -181,7 +182,7 @@ namespace novodenovo
             this.panel_edit.Controls.Add(this.label2);
             this.panel_edit.Controls.Add(this.label4);
             this.panel_edit.Controls.Add(this.tb_nomepecaEdit);
-            this.panel_edit.Location = new System.Drawing.Point(197, 42);
+            this.panel_edit.Location = new System.Drawing.Point(197, 46);
             this.panel_edit.Margin = new System.Windows.Forms.Padding(4);
             this.panel_edit.Name = "panel_edit";
             this.panel_edit.Size = new System.Drawing.Size(304, 194);
@@ -190,27 +191,28 @@ namespace novodenovo
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.Location = new System.Drawing.Point(17, 32);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 18);
+            this.label5.Size = new System.Drawing.Size(25, 21);
             this.label5.TabIndex = 38;
             this.label5.Text = "ID";
             // 
             // tb_idpeca
             // 
             this.tb_idpeca.Enabled = false;
+            this.tb_idpeca.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
             this.tb_idpeca.Location = new System.Drawing.Point(21, 54);
             this.tb_idpeca.Margin = new System.Windows.Forms.Padding(4);
             this.tb_idpeca.Name = "tb_idpeca";
             this.tb_idpeca.ReadOnly = true;
-            this.tb_idpeca.Size = new System.Drawing.Size(267, 22);
+            this.tb_idpeca.Size = new System.Drawing.Size(267, 28);
             this.tb_idpeca.TabIndex = 37;
             // 
             // btn_canc
             // 
-            this.btn_canc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_canc.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btn_canc.Location = new System.Drawing.Point(172, 137);
             this.btn_canc.Margin = new System.Windows.Forms.Padding(4);
             this.btn_canc.Name = "btn_canc";
@@ -222,7 +224,7 @@ namespace novodenovo
             // 
             // btn_Edit
             // 
-            this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Edit.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btn_Edit.Location = new System.Drawing.Point(61, 137);
             this.btn_Edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Edit.Name = "btn_Edit";
@@ -236,7 +238,7 @@ namespace novodenovo
             // 
             this.label2.BackColor = System.Drawing.Color.Blue;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -248,20 +250,21 @@ namespace novodenovo
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.Location = new System.Drawing.Point(17, 82);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 18);
+            this.label4.Size = new System.Drawing.Size(52, 21);
             this.label4.TabIndex = 0;
             this.label4.Text = "Nome";
             // 
             // tb_nomepecaEdit
             // 
+            this.tb_nomepecaEdit.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
             this.tb_nomepecaEdit.Location = new System.Drawing.Point(21, 105);
             this.tb_nomepecaEdit.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nomepecaEdit.Name = "tb_nomepecaEdit";
-            this.tb_nomepecaEdit.Size = new System.Drawing.Size(267, 22);
+            this.tb_nomepecaEdit.Size = new System.Drawing.Size(267, 28);
             this.tb_nomepecaEdit.TabIndex = 1;
             // 
             // FormPeca

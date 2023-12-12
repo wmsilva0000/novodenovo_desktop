@@ -41,10 +41,11 @@ namespace novodenovo
             // 
             // btn_entrar
             // 
-            this.btn_entrar.Location = new System.Drawing.Point(224, 480);
+            this.btn_entrar.Font = new System.Drawing.Font("Candara", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btn_entrar.Location = new System.Drawing.Point(240, 472);
             this.btn_entrar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_entrar.Name = "btn_entrar";
-            this.btn_entrar.Size = new System.Drawing.Size(192, 52);
+            this.btn_entrar.Size = new System.Drawing.Size(142, 52);
             this.btn_entrar.TabIndex = 0;
             this.btn_entrar.Text = "ENTRAR";
             this.btn_entrar.UseVisualStyleBackColor = true;
@@ -53,38 +54,42 @@ namespace novodenovo
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.Location = new System.Drawing.Point(220, 304);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(69, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Usuário";
+            this.label1.Text = "Usuário:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Candara", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.Location = new System.Drawing.Point(220, 391);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 17);
+            this.label2.Size = new System.Drawing.Size(58, 21);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Senha";
+            this.label2.Text = "Senha:";
             // 
             // tb_senha
             // 
+            this.tb_senha.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
             this.tb_senha.Location = new System.Drawing.Point(224, 423);
             this.tb_senha.Margin = new System.Windows.Forms.Padding(4);
             this.tb_senha.Name = "tb_senha";
-            this.tb_senha.Size = new System.Drawing.Size(191, 22);
+            this.tb_senha.Size = new System.Drawing.Size(191, 28);
             this.tb_senha.TabIndex = 3;
             this.tb_senha.UseSystemPasswordChar = true;
             // 
             // tb_usuario
             // 
+            this.tb_usuario.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
             this.tb_usuario.Location = new System.Drawing.Point(224, 336);
             this.tb_usuario.Margin = new System.Windows.Forms.Padding(4);
             this.tb_usuario.Name = "tb_usuario";
-            this.tb_usuario.Size = new System.Drawing.Size(191, 22);
+            this.tb_usuario.Size = new System.Drawing.Size(191, 28);
             this.tb_usuario.TabIndex = 4;
             // 
             // pictureBox1

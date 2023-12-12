@@ -44,9 +44,10 @@ namespace novodenovo
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(368, 42);
+            this.btnBuscar.Font = new System.Drawing.Font("Candara", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnBuscar.Location = new System.Drawing.Point(368, 14);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(105, 45);
             this.btnBuscar.TabIndex = 0;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -54,42 +55,47 @@ namespace novodenovo
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Candara", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(72, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Periodo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 42);
+            this.label2.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
+            this.label2.Location = new System.Drawing.Point(22, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 17);
+            this.label2.Size = new System.Drawing.Size(32, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "De:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(175, 42);
+            this.label3.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
+            this.label3.Location = new System.Drawing.Point(175, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 17);
+            this.label3.Size = new System.Drawing.Size(38, 21);
             this.label3.TabIndex = 3;
             this.label3.Text = "Até:";
             // 
             // dtpDe
             // 
-            this.dtpDe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDe.Location = new System.Drawing.Point(60, 42);
+            this.dtpDe.CustomFormat = "yyyy/MM/dd";
+            this.dtpDe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDe.Location = new System.Drawing.Point(60, 37);
             this.dtpDe.Name = "dtpDe";
             this.dtpDe.Size = new System.Drawing.Size(109, 22);
             this.dtpDe.TabIndex = 4;
             // 
             // dtpAte
             // 
-            this.dtpAte.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpAte.Location = new System.Drawing.Point(224, 42);
+            this.dtpAte.CustomFormat = "yyyy/MM/dd";
+            this.dtpAte.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpAte.Location = new System.Drawing.Point(219, 36);
             this.dtpAte.Name = "dtpAte";
             this.dtpAte.Size = new System.Drawing.Size(109, 22);
             this.dtpAte.TabIndex = 5;
@@ -111,26 +117,29 @@ namespace novodenovo
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(496, 9);
+            this.label4.Font = new System.Drawing.Font("Candara", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label4.Location = new System.Drawing.Point(734, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 17);
+            this.label4.Size = new System.Drawing.Size(113, 23);
             this.label4.TabIndex = 7;
             this.label4.Text = "Faturamento";
             // 
             // tbFaturamento
             // 
             this.tbFaturamento.Enabled = false;
-            this.tbFaturamento.Location = new System.Drawing.Point(499, 36);
+            this.tbFaturamento.Font = new System.Drawing.Font("Candara", 10F, System.Drawing.FontStyle.Italic);
+            this.tbFaturamento.Location = new System.Drawing.Point(738, 35);
             this.tbFaturamento.Name = "tbFaturamento";
             this.tbFaturamento.ReadOnly = true;
-            this.tbFaturamento.Size = new System.Drawing.Size(100, 22);
+            this.tbFaturamento.Size = new System.Drawing.Size(100, 28);
             this.tbFaturamento.TabIndex = 8;
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(781, 478);
+            this.btnSair.Font = new System.Drawing.Font("Candara", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnSair.Location = new System.Drawing.Point(762, 478);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 27);
+            this.btnSair.Size = new System.Drawing.Size(94, 37);
             this.btnSair.TabIndex = 9;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;

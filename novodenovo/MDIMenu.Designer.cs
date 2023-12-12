@@ -44,6 +44,7 @@ namespace novodenovo
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Candara", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pedidosToolStripMenuItem,
@@ -52,28 +53,28 @@ namespace novodenovo
             this.serviçosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(843, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(843, 30);
             this.menuStrip1.TabIndex = 59;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // pedidosToolStripMenuItem
             // 
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(71, 26);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
             // 
             // pendênciasToolStripMenuItem
             // 
             this.pendênciasToolStripMenuItem.Name = "pendênciasToolStripMenuItem";
-            this.pendênciasToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.pendênciasToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
             this.pendênciasToolStripMenuItem.Text = "Pendências";
             this.pendênciasToolStripMenuItem.Click += new System.EventHandler(this.pendênciasToolStripMenuItem_Click);
             // 
             // históricoToolStripMenuItem
             // 
             this.históricoToolStripMenuItem.Name = "históricoToolStripMenuItem";
-            this.históricoToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.históricoToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
             this.históricoToolStripMenuItem.Text = "Histórico";
             this.históricoToolStripMenuItem.Click += new System.EventHandler(this.históricoToolStripMenuItem_Click);
             // 
@@ -84,27 +85,27 @@ namespace novodenovo
             this.btn_servico,
             this.btn_peca});
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(85, 26);
             this.serviçosToolStripMenuItem.Text = "Cadastrar";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.btn_cliente_Click);
             // 
             // btn_servico
             // 
             this.btn_servico.Name = "btn_servico";
-            this.btn_servico.Size = new System.Drawing.Size(140, 26);
+            this.btn_servico.Size = new System.Drawing.Size(136, 26);
             this.btn_servico.Text = "Serviço";
             this.btn_servico.Click += new System.EventHandler(this.btn_servico_Click);
             // 
             // btn_peca
             // 
             this.btn_peca.Name = "btn_peca";
-            this.btn_peca.Size = new System.Drawing.Size(140, 26);
+            this.btn_peca.Size = new System.Drawing.Size(136, 26);
             this.btn_peca.Text = "Peça";
             this.btn_peca.Click += new System.EventHandler(this.btn_peca_Click);
             // 

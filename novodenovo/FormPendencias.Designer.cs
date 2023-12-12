@@ -41,14 +41,15 @@ namespace novodenovo
             this.dgvPendencias.Name = "dgvPendencias";
             this.dgvPendencias.RowHeadersWidth = 51;
             this.dgvPendencias.RowTemplate.Height = 24;
-            this.dgvPendencias.Size = new System.Drawing.Size(776, 290);
+            this.dgvPendencias.Size = new System.Drawing.Size(776, 383);
             this.dgvPendencias.TabIndex = 0;
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(713, 408);
+            this.btnSair.Font = new System.Drawing.Font("Candara", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnSair.Location = new System.Drawing.Point(690, 401);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 30);
+            this.btnSair.Size = new System.Drawing.Size(98, 37);
             this.btnSair.TabIndex = 1;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
